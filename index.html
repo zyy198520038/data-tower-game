@@ -679,6 +679,183 @@ details.learnd[open] summary{margin-bottom:10px}
 .govrules ol{margin:8px 0 0;padding-left:20px;font-size:13.5px;line-height:1.6;color:#d6e4f0}
 .govyou{margin:8px 0 0;font-size:13px;color:#7dffc4}
 .agc i{font-style:normal;font-size:12px;color:#c3d3e2;margin-top:4px;line-height:1.4}
+
+/* ---------- v37: simplified games ---------- */
+.lanes.l3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lanes.l3 .lane{padding:18px 6px;font-size:14px}
+.finds{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.fnd{display:flex;gap:10px;align-items:baseline;padding:9px 12px;border-radius:10px;border:1px solid rgba(62,227,157,.45);background:rgba(62,227,157,.07);font-size:13.5px;line-height:1.5;animation:fadeUp .3s both}
+.fnd .ft{flex:none;font:700 10.5px/1 var(--f-disp);letter-spacing:.12em;color:var(--ok);min-width:52px}
+.fmap{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.fmap>div{display:grid;grid-template-columns:auto auto 1fr auto;gap:10px;align-items:center;padding:8px 12px;border-radius:9px;border:1px solid var(--line);font-size:13px}
+.fmap code{font-family:var(--f-mono);color:var(--cyan)}
+.fmap i{font-style:normal;color:var(--mute)}
+.fmap em{font-style:normal;font:600 11.5px/1 var(--f-mono);color:var(--ok)}
+.fmap .unsure{border-color:rgba(255,200,69,.6);background:rgba(255,200,69,.07)}
+.fmap .unsure em{color:var(--amber)}
+.prom{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+@media (max-width:680px){.prom{grid-template-columns:1fr}}
+.pcard{display:flex;flex-direction:column;gap:5px;text-align:left;padding:14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);min-width:0;transition:border-color .2s,background .2s}
+.pcard:hover:not(:disabled){border-color:var(--cyan);background:rgba(98,214,255,.08)}
+.pcard .ph{font-size:11px;color:var(--cyan);overflow-wrap:anywhere}
+.pcard b{font:700 15px/1.25 var(--f-disp)}
+.pcard small{font-size:12.5px;color:#c3d3e2;line-height:1.4}
+.pcard .pc{margin-top:auto;padding-top:8px;font:600 12px/1 var(--f-mono);color:var(--amber)}
+.pcard.chosen{border-color:var(--ok);background:rgba(62,227,157,.1)}
+.pcard.chosen .pc{color:var(--ok)}
+.pcard:disabled{cursor:default}
+.gq{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.gq>b{display:block;margin-top:6px;font:700 16px/1.3 var(--f-disp)}
+.gn.hot rect{stroke:#ffd85c;stroke-width:2;fill:rgba(255,216,92,.1)}
+line.gnew{stroke-dasharray:400;stroke-dashoffset:400;animation:gdraw .7s ease-out forwards}
+@keyframes gdraw{to{stroke-dashoffset:0}}
+/* ---------- v37: architect's design notes ---------- */
+.atabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.atabs button{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;font:600 12px/1 var(--f-disp);letter-spacing:.04em;color:var(--mute)}
+.atabs button.on{background:var(--cyan);border-color:var(--cyan);color:#04202e}
+.atabs button:not(.on):hover{color:#fff;border-color:var(--cyan)}
+.arch p{font-size:15px;line-height:1.7;margin:12px 0 0;color:#e2edf6;max-width:62ch}
+.arch .sig{margin-top:16px;font:600 12px/1 var(--f-disp);letter-spacing:.08em;color:var(--cyan)}
+.prin{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+@media (max-width:680px){.prin{grid-template-columns:1fr}}
+.pr{display:flex;gap:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.025);min-width:0}
+.pr .pn{flex:none;font:700 20px/1 var(--f-mono);color:var(--cyan);opacity:.85}
+.pr b{display:block;font:700 15px/1.25 var(--f-disp)}
+.pr p{margin:5px 0 0;font-size:13.5px;line-height:1.55;color:#d6e4f0}
+.pr small{display:block;margin-top:7px;font-size:12px;line-height:1.45;color:#9fd8b9}
+.pr small em{font-style:normal;font:700 9.5px/1 var(--f-disp);letter-spacing:.12em;color:var(--ok);margin-right:6px}
+.cds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+@media (max-width:680px){.cds{grid-template-columns:1fr}}
+.cd{display:flex;flex-direction:column;gap:6px;text-align:left;padding:14px;border-radius:12px;border:1px solid var(--line);background:rgba(98,214,255,.05);min-width:0}
+.cd:hover{border-color:var(--cyan)}
+.cd span{font:700 9.5px/1 var(--f-disp);letter-spacing:.14em;color:var(--cyan)}
+.cd b{font:700 16px/1.2 var(--f-disp)}
+.cd small{font-size:12.5px;line-height:1.5;color:#c3d3e2}
+/* ---------- v37: Value Insights before → now ---------- */
+.viw .vch{display:flex;flex-direction:column;gap:.5cqw;padding:.7cqw;border-radius:.7cqw;background:rgba(255,255,255,.03);border:.08cqw solid rgba(120,225,255,.25)}
+.viw .vchh{display:flex;justify-content:space-between;gap:.6cqw;font:700 .72cqw/1 var(--f-disp);letter-spacing:.14em;color:#8fd9ff}
+.viw .vchh .okc{color:#7dffc4}
+.viw .vm{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;column-gap:.8cqw;align-items:center;padding:.55cqw .75cqw;border-radius:.5cqw;border:.1cqw solid rgba(255,200,69,.55);background:rgba(255,200,69,.08)}
+.viw .vm .vl{font:600 .92cqw/1.2 var(--f-body);color:#eef6fb;min-width:0}
+.viw .vm .vl small{display:block;margin-top:.3cqw;font:600 .64cqw/1 var(--f-disp);letter-spacing:.1em;color:#86afc6;text-transform:uppercase}
+.viw .vm .vv{grid-row:1/3;grid-column:2;display:flex;align-items:baseline;gap:.45cqw;white-space:nowrap}
+.viw .vm .vv b{font:700 1.85cqw/1 var(--f-mono);color:#ffd85c;letter-spacing:-.02em;display:inline-block}
+.viw .vm .vv s{font:500 .95cqw/1 var(--f-mono);color:#93a9b8}
+.viw .vm .vv i{font-style:normal;color:#6fb8d8;font-size:.95cqw}
+.viw .vm .vt{grid-column:1;margin-top:.35cqw;font:700 .6cqw/1 var(--f-disp);letter-spacing:.14em;color:#ffd85c}
+.viw .vm.part{border-color:rgba(98,214,255,.65);background:rgba(98,214,255,.09)}
+.viw .vm.part .vv b,.viw .vm.part .vt{color:#9be7ff}
+.viw .vm.ok{border-color:rgba(62,227,157,.75);background:rgba(62,227,157,.11)}
+.viw .vm.ok .vv b,.viw .vm.ok .vt{color:#7dffc4}
+.viw .vm.fresh{animation:vmFlash 1.1s var(--d) 3 both}
+.viw .vm.fresh .vv b{animation:vmPop .7s var(--d) both}
+.viw .vm.fresh .vv s,.viw .vm.fresh .vv i{animation:viFade .5s calc(var(--d) - .4s) both;opacity:0}
+@keyframes vmFlash{0%,100%{box-shadow:0 0 0 0 rgba(62,227,157,0)}50%{box-shadow:0 0 0 .25cqw rgba(62,227,157,.55),0 0 2cqw rgba(62,227,157,.6)}}
+@keyframes vmPop{0%{opacity:0;transform:translateY(60%) scale(.7)}70%{transform:scale(1.15)}100%{opacity:1;transform:none}}
+/* ---------- v37: Play / Guided tour switch + tour panel ---------- */
+.modesw{display:flex;padding:3px;border-radius:999px;background:var(--glass);border:1px solid var(--line);pointer-events:auto;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.modesw button{border:0;background:transparent;border-radius:999px;padding:7px 12px;font:700 11.5px/1 var(--f-disp);letter-spacing:.08em;color:var(--mute);white-space:nowrap}
+.modesw button.on{background:var(--cyan);color:#04202e}
+.modesw button:not(.on):hover{color:#fff}
+#tour{position:absolute;z-index:31;left:50%;bottom:var(--sb);transform:translateX(-50%);width:min(880px,calc(100% - 32px))}
+#tour .tbox{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:var(--glass2);border:1px solid rgba(98,214,255,.45);box-shadow:0 20px 60px rgba(0,0,0,.45),0 0 0 1px rgba(98,214,255,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:opacity .25s}
+#tour.busy .tbox{opacity:.55}
+#tour .tpor{flex:none;width:84px;height:84px;border-radius:12px;overflow:hidden;background:#dfe3f3;border:1px solid var(--line)}
+#tour .tpor img{width:100%;height:100%;object-fit:cover}
+#tour .tpor .av{width:100%;height:100%;border-radius:0;font-size:28px}
+#tour .ttxt{flex:1;min-width:0}
+#tour .tk{display:flex;gap:10px;flex-wrap:wrap;font:700 10.5px/1 var(--f-disp);letter-spacing:.14em;color:var(--cyan)}
+#tour .tk span+span{color:var(--mute)}
+#tour #tH{display:block;margin-top:7px;font:700 18px/1.2 var(--f-disp);text-wrap:balance}
+#tour #tT{margin:6px 0 0;font-size:14.5px;line-height:1.6;color:#e2edf6;max-width:70ch}
+#tour .tcdf{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+#tour .tcdf:empty{display:none}
+#tour .tchip{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;border:1px solid rgba(62,227,157,.6);background:rgba(62,227,157,.1);color:#b4ffdc;font:600 12.5px/1.2 var(--f-body);text-align:left}
+#tour .tchip span{font:700 9.5px/1 var(--f-disp);letter-spacing:.14em;color:var(--ok)}
+#tour .tchip.alt{border-color:var(--line);background:rgba(98,214,255,.08);color:#dff4ff}
+#tour .tchip:hover{filter:brightness(1.15)}
+#tour .tnav{display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap}
+#tour .tnav .tsp{flex:1}
+#tour .tnav .btn:disabled{opacity:.4;cursor:default}
+#tour .tnav .btn.ghost{background:transparent;color:var(--mute)}
+#tour .tprog{display:flex;gap:4px;justify-content:center;margin-top:8px}
+#tour .tprog i{width:7px;height:7px;border-radius:50%;background:rgba(159,180,198,.35);transition:all .3s}
+#tour .tprog i.d{background:rgba(98,214,255,.6)}
+#tour .tprog i.on{width:20px;border-radius:4px;background:var(--cyan)}
+@media (max-width:640px){#tour .tpor{width:56px;height:56px}#tour #tH{font-size:16px}#tour #tT{font-size:13.5px}}
+body.touring #objective,body.touring #escort,body.touring #roster,body.touring #hudBR,body.touring #dlg{display:none!important}
+body.touring .hs{pointer-events:none}
+body.touring #badgeChip{display:none}
+body.touring .hs:not(.tfocus){opacity:.3}
+body.touring .hs.goal .lab::before{content:none}
+body.touring #fx .tapme,body.touring #fx .kov,body.touring #fx .abp,body.touring #fx .ebadge{pointer-events:none}
+.hs.tfocus{z-index:6}
+.hs.tfocus .dot{width:22px;height:22px;background:var(--cyan);color:#04202e;box-shadow:0 0 0 3px #fff,0 0 0 6px rgba(98,214,255,.5),0 0 28px 6px rgba(98,214,255,.85);animation:goalBob 1.4s ease-in-out infinite}
+.hs.tfocus::before{content:"";position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;border:2px dashed rgba(98,214,255,.9);animation:goalSpin 6s linear infinite;pointer-events:none}
+.hs.tfocus .lab{opacity:1!important;background:var(--cyan);color:#04202e;border-color:#fff;font-weight:700}
+.hs.tfocus .lab small{color:#0c3a52}
+#title .form .btn.tour{background:rgba(98,214,255,.14);border-color:var(--cyan)}
+#title .modes{margin-top:10px;font-size:12.5px;color:var(--mute)}
+
+/* ---------- v39: architect's notes, blueprint paper ---------- */
+#modal .panel.note{width:min(1020px,100%);color:#13283b;border-color:rgba(30,120,170,.35);
+  background:linear-gradient(rgba(30,140,200,.07) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,rgba(30,140,200,.07) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(180deg,#fbfdff,#eef4fa);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);padding:26px 28px}
+.panel.note .x{color:#13283b;border-color:rgba(19,40,59,.25)}
+.panel.note .kick{color:#1679ad}
+.panel.note .ttl{color:#0d2235}
+.panel.note .sub{color:#4d6478}
+.panel.note .atabs button{color:#4d6478;border-color:rgba(19,40,59,.2)}
+.panel.note .atabs button.on{background:#0d2235;border-color:#0d2235;color:#fff}
+.panel.note .atabs button:not(.on):hover{color:#0d2235;border-color:#1679ad}
+.panel.note .btn{color:#0d2235;border-color:rgba(19,40,59,.3);background:#fff}
+.panel.note .here{background:#fff;border-color:rgba(19,40,59,.15)}
+.panel.note .here p{color:#263d52}
+.panel.note .here .kick{color:#6b8195!important}
+.nq{margin:16px 0 0;padding:0 0 0 16px;border-left:3px solid #2fb5ea;font:600 21px/1.35 var(--f-disp);color:#0d2235;max-width:40ch;text-wrap:balance}
+.whyg{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:22px;margin-top:20px;align-items:start}
+@media (max-width:760px){.whyg{grid-template-columns:1fr}}
+.ntower{position:relative;display:flex;flex-direction:column;gap:6px;padding:14px 14px 14px 58px;border-radius:14px;background:#fff;border:1px solid rgba(19,40,59,.14);box-shadow:0 8px 24px rgba(19,60,90,.08)}
+.nflow{position:absolute;left:14px;top:14px;bottom:14px;width:30px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;font:700 8.5px/1 var(--f-disp);letter-spacing:.12em;color:#1679ad;text-align:center}
+.nflow span{writing-mode:vertical-rl;transform:rotate(180deg)}
+.nflow i{flex:1;width:2px;margin:6px 0;background:linear-gradient(180deg,#2fb5ea,rgba(47,181,234,.25));position:relative}
+.nflow i::before{content:"";position:absolute;top:-2px;left:50%;margin-left:-5px;border:5px solid transparent;border-bottom:7px solid #2fb5ea;transform:translateY(-8px)}
+.nfl{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 10px;border-radius:10px;background:linear-gradient(90deg,rgba(47,181,234,.08),transparent 70%);border:1px solid rgba(47,181,234,.22)}
+.nfl>b{font:700 16px/1 var(--f-mono);color:#0d2235}
+.nfn span{display:block;font:700 13.5px/1.2 var(--f-disp);color:#0d2235}
+.nfn small{display:block;margin-top:2px;font-size:11.5px;color:#5d7387}
+.navs{display:flex}
+.nav{width:28px;height:28px;border-radius:50%;overflow:hidden;border:2px solid #fff;margin-left:-7px;background:#dfe3f3;box-shadow:0 2px 5px rgba(0,0,0,.12);flex:none}
+.nav:first-child{margin-left:0}
+.nav img{width:100%;height:100%;object-fit:cover}
+.nav .av{width:100%;height:100%;border-radius:0;font-size:10px}
+.nint{display:flex;flex-direction:column;gap:16px}
+.ni{display:flex;gap:14px}
+.ni .nn{flex:none;font:700 26px/1 var(--f-mono);color:#2fb5ea}
+.ni b{display:block;font:700 16px/1.25 var(--f-disp);color:#0d2235}
+.ni p{margin:4px 0 0;font-size:14px;line-height:1.6;color:#33495d}
+.nsig{display:flex;align-items:center;gap:10px;margin-top:22px;font:600 12px/1 var(--f-disp);letter-spacing:.08em;color:#1679ad}
+.nsig span{width:28px;height:2px;background:#2fb5ea}
+.nprin{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+@media (max-width:860px){.nprin{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.nprin{grid-template-columns:1fr}}
+.np{display:flex;flex-direction:column;padding:16px;border-radius:14px;background:#fff;border:1px solid rgba(19,40,59,.13);box-shadow:0 8px 22px rgba(19,60,90,.07);min-width:0}
+.nph{display:flex;justify-content:space-between;align-items:center}
+.npi{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(160deg,#e3f6ff,#c9ecfb);color:#1679ad}
+.npi svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.npn{font:700 13px/1 var(--f-mono);color:#9fb3c4}
+.np>b{margin-top:12px;font:700 16px/1.25 var(--f-disp);color:#0d2235;text-wrap:balance}
+.np>p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:#3a5064;flex:1}
+.npe{display:flex;gap:10px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px dashed rgba(19,40,59,.2)}
+.npe .nav{margin-left:0;width:32px;height:32px}
+.npe div{min-width:0}
+.npf{display:inline-block;font:700 9.5px/1 var(--f-disp);letter-spacing:.12em;color:#fff;background:#1679ad;border-radius:4px;padding:3px 6px}
+.npe small{display:block;margin-top:4px;font-size:12px;line-height:1.4;color:#4d6478}
+.panel.note .cds{margin-top:18px}
+.panel.note .cd{background:#fff;border-color:rgba(19,40,59,.14);box-shadow:0 8px 22px rgba(19,60,90,.07);padding:18px;color:#0d2235}
+.panel.note .cd:hover{border-color:#2fb5ea}
+.panel.note .cd span{color:#1679ad}.panel.note .cd small{color:#3a5064;font-size:13.5px}
+.panel.note .cd em{font-style:normal;margin-top:6px;font:700 12px/1 var(--f-disp);color:#1679ad}
 </style>
 
 <div id="app">
@@ -690,7 +867,9 @@ details.learnd[open] summary{margin-bottom:10px}
     <div class="chip" id="badgeChip"><span class="led"></span><span id="badgeTxt">No badge</span></div>
   </div>
   <div class="hud" id="hudTR">
+    <div class="modesw" id="modeSw" role="group" aria-label="Mode"><button data-m="game" class="on" aria-pressed="true">Play</button><button data-m="tour" aria-pressed="false">Guided tour</button></div>
     <div class="chip" id="stamps" title="Visitor passport"></div>
+    <button class="iconbtn" id="btnHome" title="Home" aria-label="Back to the home page"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button>
     <button class="iconbtn" id="btnRestart" title="Start over" aria-label="Start the tour over"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></button>
     <button class="iconbtn" id="btnSound" title="Sound" aria-label="Sound"><svg viewBox="0 0 24 24" id="sndIco"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>
   </div>
@@ -702,6 +881,8 @@ details.learnd[open] summary{margin-bottom:10px}
   </div>
 
   <div id="dlg" role="dialog" aria-live="polite"><div class="box"><div class="por" id="dPor"></div><div class="txt"><div class="who"><b id="dName"></b><span id="dRole"></span></div><div class="line" id="dLine"></div><div class="ch" id="dCh"></div></div></div><div class="nxt" id="dNext">Click to continue ▸</div></div>
+
+  <div id="tour" hidden role="region" aria-label="Guided tour" aria-live="polite"><div class="tbox"><div class="tpor" id="tPor"></div><div class="ttxt"><div class="tk"><span id="tStep"></span><span id="tWho"></span></div><b id="tH"></b><p id="tT"></p><div class="tcdf" id="tCdf"></div><div class="tnav"><button class="btn" id="tPrev">‹ Back</button><button class="btn go" id="tNext">Next ›</button><span class="tsp"></span><button class="btn ghost" id="tExit">Switch to play</button></div><div class="tprog" id="tProg"></div></div></div></div>
 
   <div id="modal"><div class="panel" id="mPanel"></div></div>
 
@@ -729,8 +910,10 @@ details.learnd[open] summary{margin-bottom:10px}
         <div class="form">
           <div><label for="nameIn">Your name</label><input id="nameIn" maxlength="16" value="Visitor" autocomplete="off"></div>
           <button class="btn go" id="btnStart" disabled>Loading…</button>
-          <button class="btn" id="btnReset" hidden>Start over</button>
+          <button class="btn" id="btnReset" hidden>New game</button>
+          <button class="btn tour" id="btnTour" disabled>Guided tour · 5 min</button>
         </div>
+        <div class="modes" id="tSave" hidden></div><div class="modes">Play the case in about 10 minutes, or take the guided tour. Switch between them any time.</div>
         <div id="loadbar"><i id="loadI"></i></div>
         <div class="facts" id="tFacts"><div><b>5</b>Floors</div><div><b>10</b>Agents</div><div><b>7</b>People</div><div><b>5</b>Exhibits</div></div>
         <div class="tnotes" id="tNotes"></div>
@@ -748,9 +931,10 @@ const app=$('#app'), view=$('#view'), frame=$('#frame'), sceneImg=$('#sceneImg')
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ================= state ================= */
-const DEF={name:'Visitor',badge:true,checked:false,verified:false,scene:'entrance',visited:{},done:{},clues:{},talked:{},learned:{}};
+const DEF={name:'Visitor',badge:true,checked:false,verified:false,scene:'entrance',visited:{},done:{},clues:{},talked:{},learned:{},viSeen:{}};
+let TOUR=null,viForce=null;
 let S=load()||JSON.parse(JSON.stringify(DEF));
-function load(){try{const r=localStorage.getItem('fdst-v3');const o=r?Object.assign(JSON.parse(JSON.stringify(DEF)),JSON.parse(r)):null;if(o)o.badge=true;return o}catch(e){return null}}
+function load(){try{const r=localStorage.getItem('fdst-v3');const o=r?Object.assign(JSON.parse(JSON.stringify(DEF)),JSON.parse(r)):null;if(o){o.badge=true;if(o.done.sort)o.done.mapping=true;if(o.done.twins)o.done.promote=true;if(o.scene==='f1vi')o.scene='f1'}return o}catch(e){return null}}
 function save(){try{localStorage.setItem('fdst-v3',JSON.stringify(S))}catch(e){}}
 
 /* ================= audio ================= */
@@ -947,7 +1131,7 @@ function avatarHTML(id){const c=C[id];return c.img?`<img src="${c.img}" alt="">`
 
 /* ================= floors ================= */
 const FL={
-  f2:{code:'2F',n:'YIYUN ZHU STUDIO',z:'Meet the architect',ds:'The studio where this tower was designed. Not in the directory.',ags:['golden']},
+  f2:{code:'2F',n:'YIYUN ZHU STUDIO',z:'The architect\'s studio',ds:'Where the tower was designed: AI design principles, Agent Governance and concept designs.',ags:['golden']},
   f1:{code:'1F',n:'RECEPTION & OPERATIONS',z:'Triage, investigate, decide',ds:'Reception, investigation and threat hunting. The case is closed here.',ags:['dachs','collie']},
   b1:{code:'B1',n:'KNOWLEDGE GRAPH',z:'Connect the evidence',ds:'Links visitors, invitations, rooms and taps into one chain of evidence.',ags:['schema1']},
   b2:{code:'B2',n:'MACHINE DATA LAKE',z:'Store raw, promote what matters',ds:'Everything lands in capacity storage. Only promoted data gets fast search.',ags:['enrich','steward']},
@@ -1007,8 +1191,8 @@ const SC={
     ],hs:[
     [9,40,'info','Federated Connections','Data coming in',()=>{learn('fed');openModal(`<div class="kick">B3 · DATA FACTORY</div><div class="ttl">Federated Connections</div><p class="sub">This door is always lit because data is flowing in from outside the tower.</p>${conceptBox('fed')}`)}],
     [32.2,52.4,'agent','Guider','Onboarding',()=>talkGuider()],
-    [52.6,59.7,'task','Processing','Sort the stream',()=>talkProcessing()],
-    [62.7,55.3,'task','Human Review','Field mapping',()=>talkReviewer()],
+    [52.6,59.7,'task','Processing','Sort 3 signals',()=>talkProcessing()],
+    [62.7,55.3,'task','Human Review','Approve the mapping',()=>talkReviewer()],
     [92.5,87.2,'agent','Data Schema','Field mapping',()=>talkSchema3()],
     [76.2,32.2,'lift','Elevator','Floors',()=>openLift()]
   ]},
@@ -1022,7 +1206,7 @@ const SC={
     ],hs:[
     [9,43,'info','Federated Access','Shared reads',()=>info('B2 · MACHINE DATA LAKE','Federated Access','Other systems can read B2 directly instead of copying it. Permissions travel with the data.')],
     [46.9,42.2,'info','Raw Datasets','Capacity storage',()=>info('B2 · MACHINE DATA LAKE','Raw Datasets · Capacity Storage','Every record lands here first: cheap, huge and slow to query. Nothing is lost, but nothing here shows up in the directory or the elevator.')],
-    [15,56.1,'task','Retained History','Find the twins',()=>openTwins()],
+    [15,56.1,'task','Retained History','Pick the real record',()=>openTwins()],
     [32.2,56.6,'agent','Enrichment','Retained history',()=>talkEnrich()],
     [48.7,46.8,'task','Storage Engineer','Promotion',()=>talkEngineer()],
     [83.1,52.2,'agent','Storage Steward','Storage tiers',()=>talkSteward()],
@@ -1035,7 +1219,7 @@ const SC={
       {webm:'img/pony_welcome.webm',webp:'img/pony_welcome.webp',x:985,y:598,w:150,h:200,alt:'Triage, your escort',z:'bg',tap:()=>talkEscort()},
       {webm:'img/b1_review.webm',webp:'img/b1_review.webp',x:245.6,y:468.9,w:523,h:459.8,alt:'Graph Analyst at the Evidence Review desk',z:1.15}
     ],hs:[
-    [55,33.3,'task','Entity Graph','Draw the links',()=>openGraphGame()],
+    [55,33.3,'task','Entity Graph','Fill in 3 links',()=>openGraphGame()],
     [19.4,31.9,'info','Entity Relationships','How it works',()=>info('B1 · KNOWLEDGE GRAPH','Entity Relationships','Records live downstairs. This floor keeps how they relate: who holds which badge, which invitation points to which room, which job wrote which record. Follow the links and you get a chain of evidence.')],
     [24.1,47.2,'human','Graph Analyst','Evidence review',()=>talkAnalyst()],
     [85.2,52.1,'agent','Knowledge','Entity model',()=>talkSchema1()],
@@ -1051,17 +1235,16 @@ const SC={
       {webm:'img/f2_yiyun.webm',webp:'img/f2_yiyun.webp',x:322,y:312,w:256,h:526,alt:'Yiyun Zhu'}
     ],hs:[
     [28.6,35.5,'human','Yiyun Zhu','Architect',()=>talkYiyun()],
-    [9.3,40.5,'info','About Me','Profile · Journey · Contact',()=>openAbout()],
+    [9.3,40.5,'info','Design Notes','From the architect',()=>openArchitect(0)],
     [38.7,57.6,'info','Agent Governance','Tower control · 9 agents',()=>openGovernance()],
     [63.9,38.3,'info','Art of the Possible','Concept 01',()=>openConcept(0)],
-    [85.6,47.5,'info','Unified MELT','Concept 03',()=>openConcept(2)],
-    [47.9,48.6,'info','Guestbook','Leave your feedback',()=>openGuestbook()],
+    [85.6,47.5,'info','Unified MELT','Concept 02',()=>openConcept(1)],
+    [47.9,48.6,'info','Guestbook','Feedback on the experience',()=>openGuestbook()],
     [16.5,64.5,'info','Case Report','Your case',()=>openCaseReport()]
   ]}
 };
 const CONCEPTS=[
   {k:'Art of the Possible',here:'This whole tower is one: a working idea you can walk through, floor by floor, instead of a slide that describes it.'},
-  {k:'Agentic Experience',here:'You just lived it. Agents proposed every step, Triage never left your side, and every decision that changed data was yours.'},
   {k:'Unified MELT',here:'On B3 you sorted logs, metrics and traces out of one stream and mapped them into a single model that every floor could read.'}
 ];
 
@@ -1101,6 +1284,7 @@ view.addEventListener('pointermove',e=>{
   if(drag){const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>6)moved=true;
     tx=clamp(drag.tx-(rx?dx/rx:0),0,1);ty=clamp(drag.ty-(ry?dy/ry:0),0,1);px=tx;py=ty;return}
   if(e.pointerType==='mouse'){
+    if(TOUR){tx=clamp(TOUR.fx+(e.clientX/innerWidth-.5)*.25,0,1);ty=clamp(TOUR.fy+(e.clientY/innerHeight-.5)*.2,0,1);return}
     if(cur&&cur.wide){const nx=e.clientX/innerWidth;tx=clamp((nx-.5)*1.4+(cur.wide.cx??.5),0,1);ty=.5+(e.clientY/innerHeight-.5)*.6}
     else{tx=e.clientX/innerWidth;ty=e.clientY/innerHeight}}
 });
@@ -1140,12 +1324,11 @@ function buildMapScreens(){
 /* 2F: About Me glass panel on the desk */
 function buildAboutPanel(){
   const d=document.createElement('div');d.className='abp';pctBox(d,140,402,158,158);
-  d.innerHTML=`<div class="abi"><div class="abt">ABOUT ME</div>${[['Profile','<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',()=>openAbout()],['Design Journey','<circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="18" r="2.4"/><circle cx="12" cy="6" r="2.4"/><path d="M7.5 16 11 8M16.5 16 13 8"/>',()=>openJourney()],['Contact','<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 7l9 6 9-6"/>',()=>openContact()]].map(([t,ic],i)=>`<button data-i="${i}"><svg viewBox="0 0 24 24">${ic}</svg>${t}</button>`).join('')}</div>`;
-  const fns=[()=>openAbout(),()=>openJourney(),()=>openContact()];
-  d.querySelectorAll('button').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();if(busy||moved)return;sfx.click();fns[+b.dataset.i]()}));
+  const items=[['Why a tower','<path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5M9 10h.01M15 10h.01"/>'],['AI principles','<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'],['Concepts','<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M7 9h10M7 13h6"/>']];
+  d.innerHTML=`<div class="abi"><div class="abt">DESIGN NOTES</div>${items.map(([t,ic],i)=>`<button data-i="${i}"><svg viewBox="0 0 24 24">${ic}</svg>${t}</button>`).join('')}</div>`;
+  d.querySelectorAll('button').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();if(busy||moved)return;sfx.click();openArchitect(+b.dataset.i)}));
   fx.appendChild(d);
 }
-function openJourney(){openModal(`<div class="kick">2F · ABOUT ME</div><div class="ttl">Design Journey</div><p class="sub">How Yiyun got from first sketches to Future Data Search Tower.</p>${TBA('Milestones','Year, role and what changed')}${TBA('Selected work','Images and short write-ups')}<div class="actions"><button class="btn go" id="jC">Contact Yiyun</button></div>`,()=>{$('#jC').onclick=openContact})}
 const GOV={triage:['Routes signals, escorts guests','Read only'],guider:['Connects new sources','Approval · Data Engineer'],proc:['Sorts the stream','Flags go to a person'],schema:['Proposes field maps','Approval · Data Engineer'],enrich:['Joins history to records','Read + propose'],steward:['Proposes promotions','Approval · Storage Engineer'],know:['Proposes links','Approval · Graph Analyst'],inv:['Builds the case','Verdict · Investigation Lead'],threat:['Flags anomalies','Read only']};
 const GOVF=[['1F','Reception & Operations',['triage','inv','threat']],['B1','Knowledge Graph',['know']],['B2','Machine Data Lake',['enrich','steward']],['B3','Data Factory',['guider','proc','schema']]];
 function openGovernance(){
@@ -1153,9 +1336,9 @@ function openGovernance(){
   <div class="govstat"><div><b>9</b>agents online</div><div><b>1,204</b>actions today</div><div><b>39</b>changes approved by people</div><div><b class="ok">0</b>changes without a person</div></div>
   ${GOVF.map(([fc,fn,ks])=>`<div class="govfl"><div class="govfh"><b>${fc}</b><span>${fn}</span><i>${ks.length} agent${ks.length>1?'s':''}</i></div><div class="ag9">${ks.map(k=>{const [_,n,f]=HERO.find(h=>h[0]===k);return `<div class="agc"><span class="on">● ONLINE</span><div class="agv" data-k="${k}"></div><b>${n}</b><span>${f.split(' · ').slice(1).join(' · ')}</span><i>${GOV[k][0]}</i><em>${GOV[k][1]}</em></div>`}).join('')}</div></div>`).join('')}
   <div class="govrules"><div class="kick" style="color:var(--mute)">TOWER POLICY</div><ol><li><b>Agents propose, people decide.</b> No agent changes data on its own.</li><li><b>Every change has a named approver.</b> The approver is logged with the change.</li><li><b>1F reads everything and changes nothing.</b> Investigation stays read-only.</li></ol>${S.verified?'<p class="govyou">Tonight four of those decisions were yours: the sort, the field mapping, the promotion and the verdict.</p>':''}</div>
-  <div class="actions"><button class="btn go" id="gC">Contact Yiyun</button></div>`,()=>{
+  <div class="actions"><button class="btn go" id="gC">Design principles for AI</button></div>`,()=>{
     document.querySelectorAll('.agv').forEach(v=>{const el=makeSprite({webm:`img/hero_${v.dataset.k}.webm`,webp:`img/hero_${v.dataset.k}.webp`,alt:''});el.className='';el.setAttribute('aria-hidden','true');v.appendChild(el)});
-    $('#gC').onclick=openContact});
+    $('#gC').onclick=()=>openArchitect(1)});
 }
 /* entrance overlays: live kiosk text and the visitor badge on the shelf */
 function pctBox(el,x,y,w,h){Object.assign(el.style,{left:x/cur.w*100+'%',top:y/cur.h*100+'%',width:w/cur.w*100+'%',height:h/cur.h*100+'%'})}
@@ -1204,7 +1387,7 @@ function setScene(id){
   if(cur.vi)buildInsightsWall();
   ambSet(cur.floor||id);
 }
-const HSIDE={'f2:Yiyun Zhu':'r','f2:About Me':'u','f2:Agent Governance':'u','f2:Art of the Possible':'u','f2:Unified MELT':'u','f2:Guestbook':'u','f2:Case Report':'r','f1:Back to lobby':'r','f1:Triage':'u','f1:Exit':'r','b2:Promoted Datasets':'u','f1:E2E Map':'r','f1:Investigation Lead':'u','f1:Investigation':'u','f1:Threat Hunting':'u','b3:Human Review':'l','b2:Storage Engineer':'u','b1:Knowledge':'r','b1:Entity Relationships':'r',
+const HSIDE={'f2:Yiyun Zhu':'r','f2:Design Notes':'u','f2:Agent Governance':'u','f2:Art of the Possible':'u','f2:Unified MELT':'u','f2:Guestbook':'u','f2:Case Report':'r','f1:Back to lobby':'r','f1:Triage':'u','f1:Exit':'r','b2:Promoted Datasets':'u','f1:E2E Map':'r','f1:Investigation Lead':'u','f1:Investigation':'u','f1:Threat Hunting':'u','b3:Human Review':'l','b2:Storage Engineer':'u','b1:Knowledge':'r','b1:Entity Relationships':'r',
   'b3:Guider':'u','b3:Processing':'u','b3:Data Schema':'l',
   'b2:Retained History':'u','b2:Enrichment':'u','b2:Storage Steward':'u',
   'b1:Graph Analyst':'u','b1:Timeline':'u',
@@ -1254,9 +1437,7 @@ function goalTarget(){
   if(!S.visited.f1)return['entrance','Main Doors'];
   if(!S.talked.vi&&!S.done.sort)return['f1','Value Insights'];
   if(!S.done.sort)return['b3','Processing'];
-  if(!S.done.mapping)return['b3','Human Review'];
   if(!S.done.twins)return['b2','Retained History'];
-  if(!S.done.promote)return['b2','Storage Engineer'];
   if(!S.done.graph)return['b1','Entity Graph'];
   if(!S.verified)return['f1','Investigation Lead'];
   if(!S.talked.vi2&&!S.visited.f2)return['f1','Value Insights'];
@@ -1265,6 +1446,7 @@ function goalTarget(){
   return null;
 }
 function applyGoal(){
+  if(TOUR){hsLayer.querySelectorAll('.hs.goal').forEach(b=>b.classList.remove('goal'));return}
   const g=goalTarget(),here=cur&&cur.vi?'f1vi':(cur&&cur.floor)||'entrance';
   let want=null,lift=false;
   if(g){if(here==='f1vi')want='Back to lobby';else if(g[0]===here)want=g[1];else{want='Elevator';lift=true}}
@@ -1275,16 +1457,14 @@ function objective(){
   if(!S.checked)return 'Tap your visitor badge on the kiosk to check in';
   if(!S.visited.f1)return 'Triage is your escort. Walk through the doors into the lobby';
   if(!S.talked.vi&&!S.done.sort)return 'Check the Value Insights wall in the lobby, then take the elevator to B3';
-  if(!S.done.sort)return 'Take the elevator to B3 and help Processing sort the incoming stream';
-  if(!S.done.mapping)return 'On B3, make the mapping calls at Human Review';
-  if(!S.done.twins)return 'On B2, find the twin records in Retained History';
-  if(!S.done.promote)return 'On B2, approve the promotion with the Storage Engineer';
-  if(!S.done.graph)return 'On B1, draw the links in the Entity Graph';
-  if(!S.verified)return 'Back to 1F: present your case at the Investigation Lead\'s desk';
-  if(!S.talked.vi2&&!S.visited.f2)return 'Look at the Value Insights wall again: see what your fix changed';
-  if(!S.visited.f2)return '2F is back. Take the elevator up to meet Yiyun';
-  if(!S.noted)return 'You made it. Explore the studio, then leave your feedback on this work';
-  return 'You made it. Explore the studio and Yiyun\'s work';
+  if(!S.done.sort)return 'On B3, help Processing sort the three signals your tap left';
+  if(!S.done.twins)return 'On B2, decide which record gets promoted to fast search';
+  if(!S.done.graph)return 'On B1, fill in the three missing links on the Entity Graph';
+  if(!S.verified)return 'Back to 1F: make the call at the Investigation Lead\'s desk';
+  if(!S.talked.vi2&&!S.visited.f2)return 'Look at the Value Insights wall again: every number has moved';
+  if(!S.visited.f2)return '2F is back. Take the elevator up to meet the architect';
+  if(!S.noted)return 'Explore the studio, then give your feedback on the experience';
+  return 'Explore the studio: design notes, Agent Governance and concept designs';
 }
 function toast(t){const e=$('#toast');e.innerHTML=t;e.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('on'),2800)}
 function stamp(k){if(!S.visited[k])S.visited[k]=true;save();renderHUD();renderHS()}
@@ -1292,7 +1472,7 @@ function complete(task,msg){S.done[task]=true;save();document.querySelectorAll('
 function talkEscort(){
   const o=objective();
   say('triage',[S.verified?'Your badge is green. '+o+'.':'Right behind you. Next: '+o.charAt(0).toLowerCase()+o.slice(1)+'.',
-    {t:'Anything else?',choices:[{l:'Show my clue cards',end:true,fn:()=>openPassport()},{l:'Open the floor map',end:true,fn:()=>openMap()},{l:'Thanks, Triage',end:true}]}]);
+    {t:'Anything else?',choices:[{l:'Show my clue cards',end:true,fn:()=>openPassport()},{l:'Switch to the guided tour',end:true,fn:()=>startTour({here:true})},{l:'Open the floor map',end:true,fn:()=>openMap()},{l:'Thanks, Triage',end:true}]}]);
 }
 /* ================= dialogue ================= */
 const D={el:$('#dlg'),q:[],i:0,cid:null,done:null,typing:false,full:'',timer:null};
@@ -1330,7 +1510,7 @@ addEventListener('keydown',e=>{
 
 /* ================= modal ================= */
 const modal=$('#modal'),mp=$('#mPanel');let onClose=null;
-function openModal(html,cb){closeDlg(true);mp.innerHTML='<button class="x" aria-label="Close">×</button>'+html;mp.querySelector('.x').onclick=closeModal;modal.classList.add('on');onClose=null;cb&&cb(mp);mp.scrollTop=0}
+function openModal(html,cb){closeDlg(true);mp.className='panel';mp.innerHTML='<button class="x" aria-label="Close">×</button>'+html;mp.querySelector('.x').onclick=closeModal;modal.classList.add('on');onClose=null;cb&&cb(mp);mp.scrollTop=0}
 function closeModal(){modal.classList.remove('on');const f=onClose;onClose=null;f&&f()}
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
 function info(k,t,body){openModal(`<div class="kick">${k}</div><div class="ttl">${t}</div><p class="sub">${body}</p>`)}
@@ -1474,25 +1654,51 @@ function talkOps(){
 function talkVisitors(){say('visitorA',["I heard someone's appointment didn't match at the door. Was that you?",{t:'',choices:[{l:"Yes. I'm on the case",lines:["With Triage at your side? Then you'll get to the bottom of it."]},{l:'Just visiting',lines:['Same here. This place is full of surprises.']}]}])}
 function talkDachs(){say('dachs',[S.verified?'Findings filed. Your case is the cleanest one I have written up this month.':'I write the findings once the evidence is in. Bring your clue cards to the Lead and I will draft them.'])}
 function openInsights(){go('f1vi',{zoom:[26,31],after:()=>{
+  if(TOUR)return;
+  const newly=viNewly.slice();
   if(S.verified&&!S.talked.vi2){S.talked.vi2=1;S.talked.vi=1;save();renderHUD();
-    setTimeout(()=>say('triage',["Watch Tower Health on the right.","4 of 5 became 5 of 5. 97.8% became 100%. One ghost record became zero. And your two fixes are now approved.","One renamed record got promoted, and the numbers moved with it. That's value you can measure.",{t:'',choices:[{l:'Take me to 2F',end:true,fn:()=>{leaveInsights();setTimeout(openLift,1500)}},{l:'Let me look around',end:true}]}]),2600);return}
+    setTimeout(()=>say('triage',["Every floor is done, and every Before → Now box on this wall moved.","Decisions waiting on a person went from 4 to 0. Spaces in fast search from 4 of 5 to 5 of 5. Ghost records from 1 to 0.","One renamed record, promoted on purpose, and the whole tower got more valuable. That's value you can measure.",{t:'',choices:[{l:'Take me to 2F',end:true,fn:()=>{leaveInsights();setTimeout(openLift,1500)}},{l:'Let me look around',end:true}]}]),2600);return}
   if(!S.talked.vi){S.talked.vi=1;save();renderHUD();
-    setTimeout(()=>say('triage',["Value Insights: what the tower's data is worth, live. Agents, storage tiers and what to fix next.","See the amber rows under Tower Health? 4 of 5 spaces in fast search, and one ghost record. Hold on to that. It matters tonight.",'Tap the green chips to see the Cisco Data Fabric idea behind each screen.']),600)}
+    setTimeout(()=>say('triage',["Value Insights: what the tower's data is worth tonight.","Each screen has a Before → Now box. Everything amber is waiting on a floor downstairs. Finish a floor and its numbers turn green.",'Come back any time to watch them move. Tap the green chips for the Cisco Data Fabric idea behind each screen.']),700);return}
+  if(newly.length)setTimeout(()=>say('triage',['Since you were last here: '+newly.map(m=>`${m.l.toLowerCase()} ${m.b} → ${vmState(m).now}`).join('; ')+'.']),2600);
 }})}
 function leaveInsights(){go('f1',{after:()=>{}})}
 /* ================= 1F Value Insights wall ================= */
-const VI_HEALTH=[['Spaces in fast search','4 / 5','5 / 5'],['Check-ins matched','97.8%','100%'],['Ghost records','1','0']];
 const VI_HOURS=[22,18,15,14,16,24,38,55,72,80,84,78,70,74,81,77,69,58,49,44,41,47,96,35];
-const VI_AGENTS=[['Processing',486],['Triage',212],['Enrichment',198],['Threat Hunting',167],['Investigation',141]];
 const VI_MELT=[['Logs',2.9,.42],['Metrics',1.1,.21],['Traces',.8,.07]];
-function viAfter(){return S.verified}
+const VFL={b3:()=>!!S.done.sort,b2:()=>!!S.done.twins,b1:()=>!!S.done.graph,f1:()=>!!S.verified};
+const VFN={b3:'B3',b2:'B2',b1:'B1',f1:'1F'};
+function viDone(f){return viForce==='after'?true:viForce==='before'?false:VFL[f]()}
+function viN(){return ['b3','b2','b1','f1'].filter(viDone).length}
+function viAfter(){return viForce==='after'||(viForce!=='before'&&S.verified)}
+const VM=[
+  {k:'wait',s:1,l:'Decisions waiting on a person',t:'One per floor',b:'4',now:()=>String(4-viN()),pr:1},
+  {k:'signed',s:1,l:'Changes signed by a person',t:'One per floor',b:'38',now:()=>String(38+viN()),pr:1},
+  {k:'sorted',s:2,f:'b3',l:'Events sorted by type',t:'B3 · Logs, metrics, traces',b:'61%',a:'100%'},
+  {k:'fast',s:2,f:'b2',l:'Spaces in fast search',t:'B2 · Storage tiers',b:'4 / 5',a:'5 / 5'},
+  {k:'traced',s:3,f:'b1',l:'Check-ins traced to a source',t:'B1 · Lineage',b:'97.8%',a:'100%'},
+  {k:'ghost',s:3,f:'f1',l:'Ghost records',t:'1F · Your verdict',b:'1',a:'0'}
+];
+let viNewly=[];
+function vmState(m){const now=m.pr?m.now():(viDone(m.f)?m.a:m.b),moved=now!==m.b;return {now,moved,full:m.pr?viN()===4:moved}}
+function vmRow(m,d){
+  const st=vmState(m),fresh=viForce?viForce==='after':(st.moved&&(S.viSeen||{})[m.k]!==st.now);
+  if(fresh&&!viForce)viNewly.push(m);
+  const cls=st.full?'ok':st.moved?'part':'wait';
+  const val=st.moved?`<s>${m.b}</s><i>→</i><b>${st.now}</b>`:`<b>${m.b}</b>`;
+  const tag=st.full?'▲ IMPROVED':st.moved?`▲ ${viN()} OF 4 FLOORS DONE`:(m.pr?'WAITING ON EVERY FLOOR':'WAITING ON '+VFN[m.f]);
+  return `<div class="vm ${cls}${fresh?' fresh':''}" style="--d:${d}s"><span class="vl">${m.l}<small>${m.t}</small></span><span class="vv">${val}</span><span class="vt">${tag}</span></div>`;
+}
+function vmBlock(s,d0){const ms=VM.filter(m=>m.s===s),n=ms.filter(m=>vmState(m).moved).length;
+  return `<div class="vch"><div class="vchh"><span>BEFORE → NOW</span><span class="${n===ms.length?'okc':''}">${n} OF ${ms.length} IMPROVED</span></div>${ms.map((m,i)=>vmRow(m,d0+i*.25)).join('')}</div>`}
+function viMarkSeen(){if(viForce)return;S.viSeen=S.viSeen||{};VM.forEach(m=>S.viSeen[m.k]=vmState(m).now);save()}
+function viNote(f){const ms=VM.filter(m=>m.f===f);if(!ms.length)return;setTimeout(()=>toast(`<b>Value Insights</b> · ${ms.map(m=>`${m.l} ${m.b} → ${m.a}`).join(' · ')}`),2900)}
 function viRecs(A){
   const R=[];
-  if(A){R.push(['ok new chg','Fix space-sync so renamed rooms get promoted','From your case · no more ghost check-ins at 22:10','APPROVED']);R.push(['ok new chg','Retire kiosk ENT-02 and its credentials','From your case · a dark kiosk was still answering','APPROVED'])}
-  else if(S.checked)R.push(['warn','Find the space missing from fast search','Directory lists 5 floors, the elevator shows 4','INVESTIGATING']);
-  R.push(['','Send low-confidence kiosk checks to a person','Cuts false door alarms by about a third','PROPOSED']);
-  R.push(['','Keep debug traces in capacity storage','Frees 0.6 TB a day of fast search','PROPOSED']);
-  return R.slice(0,3);
+  if(A){R.push(['ok','Fix space-sync so renamed rooms get promoted','From your case · no more ghost check-ins at 22:10','APPROVED']);R.push(['ok','Retire kiosk ENT-02 and its credentials','From your case · a dark kiosk was still answering','APPROVED'])}
+  else{if(S.checked||viForce)R.push(['warn','Find the space missing from fast search','Directory lists 5 floors, the elevator shows 4','INVESTIGATING']);
+    R.push(['','Send low-confidence kiosk checks to a person','Cuts false door alarms by about a third','PROPOSED'])}
+  return R.slice(0,2);
 }
 function viSpark(A){
   const W=300,H=86,mx=100,pts=VI_HOURS.map((v,i)=>[i*W/23,H-8-v/mx*(H-18)]);
@@ -1511,9 +1717,9 @@ function viDonut(){
   return `<svg viewBox="0 0 100 100" aria-label="15 percent of today's data promoted to fast search"><g class="dn-ring"><circle cx="50" cy="50" r="${r}" fill="none" stroke="rgba(30,159,220,.28)" stroke-width="11"/><circle class="dn-p" data-to="${(C*p).toFixed(1)} ${C.toFixed(1)}" cx="50" cy="50" r="${r}" fill="none" stroke="#3ee39d" stroke-width="11" stroke-linecap="round" style="filter:drop-shadow(0 0 3px rgba(62,227,157,.8))"/></g><text class="dn-c1" x="50" y="53">15%</text><text class="dn-c2" x="50" y="64">PROMOTED</text></svg>`;
 }
 function buildInsightsWall(){
-  const A=viAfter();
+  const A=viAfter();viNewly=[];
   const w=document.createElement('div');w.className='viw'+(A?' after':'');w.id='viw';pctBox(w,232,226,1192,628);
-  const L=S.learned||{},maxA=VI_AGENTS[0][1],ch=(k,h,t)=>`<button class="chip${L[k]?' seen':''}" data-k="${k}" data-h="${h}">${t}</button>`;
+  const L=S.learned||{},ch=(k,t)=>`<button class="chip${L[k]?' seen':''}" data-k="${k}">${t}</button>`;
   const evs=[
     ...(A?[['g','NOW','INVESTIGATION LEAD','case closed · space-sync fix approved by a person']]:[]),
     ['','22:20:14','TRIAGE','APPOINTMENT_NOT_MATCHED · escort assigned'],
@@ -1525,36 +1731,32 @@ function buildInsightsWall(){
     ['','21:30:00','FEDERATED SEARCH','S3 · Snowflake queried in place · 0 bytes copied']
   ];
   const evHTML=evs.map(([c,t,a,m])=>`<span class="tev ${c}"><em>${t}</em><b>${a}</b>${m}</span>`).join('');
-  const health=VI_HEALTH.map(([n,b,a],i)=>A
-    ?`<div class="ht roll" style="--d:${1.4+i*.45}s"><span class="hn">${n}</span><span class="hv"><b class="o">${b}</b><b class="n">${a}</b></span><span class="hp"><span class="o">NEEDS A LOOK</span><span class="n">✓ FIXED BY YOU</span></span></div>`
-    :`<div class="ht"><span class="hn">${n}</span><span class="hv"><b>${b}</b></span><span class="hp">NEEDS A LOOK</span></div>`).join('');
   w.innerHTML=`
   <section class="scr s1" aria-label="Agent activity">
     <div class="vh"><span><b>01</b> · AGENT ACTIVITY</span><span class="live"><i></i>LIVE</span></div>
     <div class="row"><div><div class="big" id="viAct" data-count="1204">0</div><div class="cap">agent actions today</div></div><span class="delta">▲ 18% vs last Thu</span></div>
-    <div class="${A?'chg':''}" style="--d:1.6s"><div class="lbl">ACTIONS PER HOUR · 24H</div>${viSpark(A)}</div>
-    <div><div class="lbl">BY AGENT</div><div class="bars">${VI_AGENTS.map(([n,v])=>`<div class="bar"><span>${n}</span><span class="tr"><span class="fi" data-w="${v/maxA*100}"></span></span><span class="v">${v}</span></div>`).join('')}</div></div>
-    <div class="foot"><span class="meta ${A?'chg':''}" style="--d:1.9s">${A?'39 changes · 1 decided by you':'38 changes · 38 decided by people'}</span>${ch('agents','Agents propose, people decide','Who decides?')}</div>
+    <div><div class="lbl">ACTIONS PER HOUR · 24H</div>${viSpark(A)}</div>
+    ${vmBlock(1,1.0)}
+    <div class="foot"><span class="meta">Agents propose, people sign</span>${ch('agents','Who decides?')}</div>
   </section>
   <section class="scr s2" aria-label="Data utilization">
     <div class="vh"><span><b>02</b> · DATA UTILIZATION</span><span class="live"><i></i>LIVE</span></div>
     <div class="donut">${viDonut()}<div class="leg"><span><i style="background:#3ee39d"></i>Fast search<b><span data-count="0.7" data-dec="1">0</span> TB</b></span><span><i style="background:#1e9fdc"></i>Capacity storage<b><span data-count="4.1" data-dec="1">0</span> TB</b></span></div></div>
-    <div class="row"><div><div class="big"><span data-count="63">0</span><small>%</small></div><div class="cap">of promoted data searched this week</div></div><span class="delta">−68% cost vs indexing all</span></div>
     <div><div class="lbl">INGESTED TODAY · PROMOTED</div><div class="bars">${VI_MELT.map(([n,v,p])=>`<div class="bar"><span>${n}</span><span class="tr"><span class="fi" data-w="${v/2.9*100}"></span><span class="fi p" data-w="${p/2.9*100}"></span></span><span class="v">${v} TB</span></div>`).join('')}</div></div>
-    <div class="alert ${A?'ok chg':'warn'}" style="--d:1.3s"><span class="n">${A?5:4} / 5</span><span>${A?'Spaces in fast search match the directory. 2F is back.':'Spaces in fast search. The directory lists 5. One is missing.'}</span></div>
-    <div class="foot">${ch('melt','Machine data comes in different kinds','Logs, metrics, traces?')}${ch('tier','Pay for performance, not retention','Why only 15%?')}</div>
+    ${vmBlock(2,1.5)}
+    <div class="foot">${ch('melt','Logs, metrics, traces?')}${ch('tier','Why only 15%?')}</div>
   </section>
   <section class="scr s3" aria-label="Tower health">
     <div class="vh"><span><b>03</b> · TOWER HEALTH</span><span class="meta">${A?'AFTER YOUR CASE':'TONIGHT · 22:20'}</span></div>
-    <div class="hero ${A?'ok':''}">${health}</div>
+    ${vmBlock(3,2.0)}
     <div class="lbl" style="margin-top:.4cqw">RECOMMENDATIONS</div>
-    <div class="recs">${viRecs(A).map(([c,t,d,st],i)=>`<div class="rec ${c}" style="animation-delay:${.7+i*.12}s;--d:${1.9+i*.2}s"><span class="t">${t}</span><span class="d">${d}</span><span class="st">${st}</span></div>`).join('')}</div>
-    <div class="foot"><span class="meta">Updated ${A?'22:41':'22:21'} · tower time</span>${ch('lake','Machine Data Lake','Where does it all live?')}</div>
+    <div class="recs">${viRecs(A).map(([c,t,d,st],i)=>`<div class="rec ${c}" style="animation-delay:${.7+i*.12}s"><span class="t">${t}</span><span class="d">${d}</span><span class="st">${st}</span></div>`).join('')}</div>
+    <div class="foot"><span class="meta">Updated ${A?'22:41':'22:21'} · tower time</span>${ch('graph','How was it traced?')}</div>
   </section>
   <div class="tk" aria-label="Event stream"><span class="tag">● EVENT STREAM</span><div class="win"><div class="run">${evHTML}${evHTML}</div></div></div>`;
-  fx.appendChild(w);
+  fx.appendChild(w);viMarkSeen();
   w.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();if(busy||moved)return;sfx.click();learn(b.dataset.k);b.classList.add('seen');
-    openModal(`<div class="kick">1F · VALUE INSIGHTS</div><div class="ttl">${b.textContent.replace(/^✓\s*/,'')}</div>${conceptBox(b.dataset.k)}`)}));
+    openModal(`<div class="kick">1F · VALUE INSIGHTS</div><div class="ttl">${LEARN[b.dataset.k].t}</div>${conceptBox(b.dataset.k)}`)}));
   const t0=performance.now(),cnt=[...w.querySelectorAll('[data-count]')];
   const step=now=>{if(!w.isConnected)return;const k=Math.min(1,(now-t0-500)/1400),e=k<0?0:1-Math.pow(1-k,3);
     cnt.forEach(el=>{const to=+el.dataset.count,dec=+(el.dataset.dec||0),v=to*e;el.textContent=dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US')});
@@ -1655,91 +1857,62 @@ function talkGuider(){
   if(!S.talked.b3){S.talked.b3=1;save();return say('guider',[
     "Your badge tap came in as a log from ENT-01. Here's the strange part: your invitation code came in twice.",
     {who:'triage',t:"Twice? You were with me the whole time. So who's the other one?"},
-    {who:'processing',t:'Help me pull both out of the stream before they get mixed in with everything else.'},
+    {who:'processing',t:'Three signals from your tap are in the stream right now. Help me sort them.'},
     {t:'',choices:[{l:'Start sorting',end:true,fn:()=>openSort()},{l:'In a moment',end:true}]}])}
   say('guider',['I sort what comes in by kind: logs, metrics or traces. Get that wrong and every floor above inherits the mistake.',S.done.sort?'You pulled both taps out. One of them is you. The other one still needs explaining.':'Processing is waiting for you at the belt.']);
 }
 function talkProcessing(){
-  if(!S.done.sort)return say('processing',['Mixed data in, clean events out. Sort each packet into its lane and flag anything that carries your invitation code.',{t:'',choices:[{l:'Start sorting',end:true,fn:()=>openSort()},{l:'Later',end:true}]}]);
-  say('processing',['Both taps are flagged. Now the Data Engineer needs your calls on how to map them.',{t:'',choices:[{l:'Go to Human Review',end:true,fn:()=>openMapping()},{l:'OK',end:true}]}]);
+  if(!S.done.sort)return say('processing',['Mixed data in, clean events out. Your badge tap left three signals in tonight\'s stream. Sort them and see what they say.',{t:'',choices:[{l:'Start sorting',end:true,fn:()=>openSort()},{l:'Later',end:true}]}]);
+  say('processing',['Sorted and mapped. Both findings went up to B2.']);
 }
 const PACKETS=[
-  ['metric','cpu.util=0.73 host=b3-rack-07'],
-  ['log','22:19:58 elevator=E1 door=open floor=1F'],
-  ['flag','22:20:14.382 kiosk=ENT-01 badge=VB-0457 invite=FDST-2F-1117'],
-  ['trace','GET /directory/floors duration=4ms parent=a91f'],
-  ['metric','door_events.count=412 window=24h'],
-  ['flag','22:10:00.000 kiosk=ENT-02 badge=null invite=FDST-2F-1117'],
-  ['trace','GET /spaces/SPACE-2F-STUDIO duration=2ms status=404'],
-  ['log','22:16:12 camera=ENT-02 status=offline']
+  ['log','22:20:14.382 kiosk=ENT-01 badge=VB-0457 invite=FDST-2F-1117 result=DESTINATION_NOT_FOUND','Your own tap. The kiosk could not find 2F.'],
+  ['metric','taps{invite="FDST-2F-1117"} = 2   window=24h','Two taps with your code. The other came at <b>22:10:00.000</b> from ENT-02, a kiosk that has been dark for a week.'],
+  ['trace','GET /spaces/SPACE-2F-STUDIO  →  404 not found  ·  2 ms','The directory has never heard of the studio on your invitation.']
 ];
 function shake(el){if(!el)return;el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake')}
 function openSort(){
-  if(S.done.sort)return say('processing',['Already sorted. Both taps are flagged and waiting at Human Review.']);
-  let i=0;const flags=[];
-  const why={log:'That one is a log: it records that something happened, with a time.',metric:'That one is a metric: a name and a measured number.',trace:'That one is a trace: one request, with how long it took.'};
-  openModal(`<div class="kick">B3 · DATA PROCESSING</div><div class="ttl">Sort the stream</div><p class="sub">Eight packets. Put each one in its lane, and flag the two that carry your invitation code <span class="mono">FDST-2F-1117</span>.</p>
+  if(S.done.sort)return say('processing',['Already sorted and mapped. Both findings went up to B2.']);
+  let i=0;
+  const why={log:'A log records that something happened, at a time.',metric:'A metric is a name and a measured number.',trace:'A trace follows one request and how long it took.'};
+  openModal(`<div class="kick">B3 · DATA PROCESSING</div><div class="ttl">Sort three signals</div><p class="sub">Your badge tap left three signals in tonight's stream. Drop each one in the right lane.</p>
     <div class="legend"><span><b>LOG</b> something happened, with a time</span><span><b>METRIC</b> a measured number</span><span><b>TRACE</b> one request and how long it took</span></div>
-    <div class="belt"><div class="pk-now" id="pkNow"></div><div class="pk-next" id="pkNext"></div></div>
-    <div class="lanes" id="lanes"><button class="lane" data-l="log">LOG</button><button class="lane" data-l="metric">METRIC</button><button class="lane" data-l="trace">TRACE</button><button class="lane flag" data-l="flag">⚑ FLAG</button></div>
-    <div class="msg" id="sMsg"></div><div class="prog mono" id="sProg"></div><div class="tray" id="sTray"></div><div id="sEnd"></div>`,()=>{
+    <div class="belt"><div class="pk-now" id="pkNow"></div></div>
+    <div class="lanes l3" id="lanes"><button class="lane" data-l="log">LOG</button><button class="lane" data-l="metric">METRIC</button><button class="lane" data-l="trace">TRACE</button></div>
+    <div class="msg" id="sMsg"></div><div class="finds" id="sFind"></div><div id="sEnd"></div>`,()=>{
     const draw=()=>{
       if(i>=PACKETS.length)return finish();
-      $('#pkNow').innerHTML=`<div class="pk in"><span class="pkt">PACKET ${i+1} OF ${PACKETS.length}</span><code>${PACKETS[i][1]}</code></div>`;
-      $('#pkNext').innerHTML=PACKETS.slice(i+1,i+3).map(p=>`<div class="pk sm"><code>${p[1]}</code></div>`).join('');
-      $('#sProg').textContent=`Sorted ${i} of ${PACKETS.length} · Flagged ${flags.length} of 2`;
+      $('#pkNow').innerHTML=`<div class="pk in"><span class="pkt">SIGNAL ${i+1} OF ${PACKETS.length}</span><code>${PACKETS[i][1]}</code></div>`;
     };
     const finish=()=>{
-      learn('melt');
-      $('#lanes').hidden=true;mp.querySelector('.belt').hidden=true;mp.querySelector('.legend').hidden=true;$('#sMsg').textContent='';$('#sProg').textContent='All packets sorted.';
-      $('#sEnd').innerHTML=`<div class="kick" style="margin-top:16px;color:var(--amber)">CLUE 2 · THE OTHER YOU</div><div class="tscroll"><table class="cmp"><tr><th></th><th>Your tap</th><th>The other tap</th></tr><tr><td>Time</td><td class="mono">22:20:14.382</td><td class="mono hl">22:10:00.000</td></tr><tr><td>Kiosk</td><td>ENT-01 · main door</td><td class="hl">ENT-02 · east entrance</td></tr><tr><td>Badge</td><td class="mono">VB-0457</td><td class="hl">none</td></tr><tr><td>Door</td><td>Opened</td><td class="hl">No door event</td></tr></table></div>${conceptBox('melt')}<div class="actions"><button class="btn go" id="sDone">Collect clue 2</button></div>`;
-      $('#sDone').onclick=()=>{closeModal();complete('sort');gotClue(2);
-        say('triage',["Zero milliseconds. People don't tap that precisely.",{who:'reviewer',t:'Two taps, one invitation code. I need you to decide how we map them.'},{t:'',choices:[{l:'Go to Human Review',end:true,fn:()=>openMapping()},{l:'In a moment',end:true}]}])};
+      learn('melt');learn('extract');
+      $('#lanes').hidden=true;mp.querySelector('.belt').hidden=true;mp.querySelector('.legend').hidden=true;$('#sMsg').textContent='';
+      $('#sEnd').innerHTML=`<div class="kick" style="margin-top:16px">FIELDS EXTRACTED AUTOMATICALLY · DATA SCHEMA</div>
+        <div class="fmap"><div><code>kiosk</code><i>→</i><span>device.kiosk_id</span><em>0.99</em></div><div><code>invite</code><i>→</i><span>invitation.code</span><em>0.98</em></div><div><code>badge</code><i>→</i><span>badge.id</span><em>0.97</em></div><div class="unsure"><code>space</code><i>→</i><span>destination.space_id</span><em>0.61 · not sure</em></div></div>
+        <p class="sub" style="margin-top:10px">Data Schema is not sure about one field: the studio ID is not in its model. Fields below its confidence wait for a person. That's you.</p>
+        <div class="actions"><button class="btn go" id="sDone">✓ Approve the mapping</button></div>`;
+      $('#sDone').onclick=()=>{sfx.ok();
+        $('#sEnd').innerHTML=`<div class="msg ok" style="margin-top:14px">Approved. Signed by you, logged by the Data Engineer.</div>${conceptBox('melt')}<div class="actions"><button class="btn go" id="sClose">Collect clues 2 and 3</button></div>`;
+        $('#sClose').onclick=()=>{closeModal();complete('sort');complete('mapping');gotClue(2);setTimeout(()=>gotClue(3),900);viNote('b3');
+          say('triage',["Two taps with one code, and a studio the directory has never heard of.",{who:'schema3',t:'B2 keeps everything that ever arrived. Ask there.'},{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'Recap this floor · 30 sec',end:true,fn:()=>startTour({grp:'b3'})},{l:'In a moment',end:true}]}])};
+      };
     };
     mp.querySelectorAll('.lane').forEach(b=>b.onclick=()=>{
-      const p=PACKETS[i];if(!p)return;const t=p[0],l=b.dataset.l,m=$('#sMsg'),pk=$('#pkNow .pk');
-      const no=x=>{sfx.err();m.className='msg bad';m.textContent='Processing: '+x;shake(pk)};
-      if(t==='flag'&&l!=='flag')return no('Wait. That one carries your invitation code. Flag it.');
-      if(t!=='flag'&&l==='flag')return no('Nothing about your invitation in that one. Sort it by kind.');
-      if(t!=='flag'&&l!==t)return no(why[t]);
-      sfx.click();m.className='msg ok';m.textContent=t==='flag'?'Flagged. That is one of yours.':'Right.';
-      if(t==='flag'){flags.push(p[1]);$('#sTray').innerHTML=flags.map(f=>`<div class="pk flagged"><span class="pkt">FLAGGED</span><code>${f}</code></div>`).join('')}
+      const p=PACKETS[i];if(!p)return;const m=$('#sMsg'),pk=$('#pkNow .pk');
+      if(b.dataset.l!==p[0]){sfx.err();m.className='msg bad';m.textContent='Processing: '+why[p[0]]+' Try another lane.';shake(pk);return}
+      sfx.beep();m.className='msg ok';m.textContent='Right: that one is a '+p[0]+'.';
+      $('#sFind').insertAdjacentHTML('beforeend',`<div class="fnd"><span class="ft">${p[0].toUpperCase()}</span><span>${p[2]}</span></div>`);
       i++;draw();
     });
     draw();
   });
 }
-
-/* ================= B3 · field mapping ================= */
-const DECIDE=[
-  {f:'email',v:'visitor@mail.example',src:'Your tap',opts:[['host.email',.58],['visitor.email']],ok:'visitor.email',by:'Data Schema',why:"You typed that address into the kiosk yourself. It's yours, not the host's.",good:'Right. It belongs to the visitor.'},
-  {f:'space',v:'SPACE-2F-STUDIO',src:'Your tap',opts:[['drop the field',.61],['destination.space_id']],ok:'destination.space_id',by:'Triage',why:"If we drop it, we lose the only trace of where you're going.",good:"Kept. It's the only trace of your destination."},
-  {f:'badge',v:'null',src:'The other tap',opts:[['fill with VB-0457',.52],['keep it empty']],ok:'keep it empty',by:'Triage',why:"Your badge was issued at 22:19. It didn't exist at 22:10.",good:'Kept empty. That tap never had a badge.'}
-];
 function talkReviewer(){
-  if(!S.done.sort)return say('reviewer',['Sort the stream with Processing first. I need both taps pulled out before we map them.']);
-  if(S.done.mapping)return say('reviewer',['Mapping approved and signed. Both taps are on their way up to B2.']);
-  openMapping();
+  if(!S.done.sort)return say('reviewer',['I sign off on field mappings. Sort the three signals with Processing first, and the mapping comes to you.',{t:'',choices:[{l:'Start sorting',end:true,fn:()=>openSort()},{l:'Later',end:true}]}]);
+  say('reviewer',['Mapping approved and signed in your name. When an agent is unsure, a person decides. That is the rule on this floor.']);
 }
-function talkSchema3(){say('schema3',['I map raw fields onto one model so every floor reads them the same way.',S.done.mapping?"Thanks for the three calls. I'll remember them next time.":'Three fields on your taps are beyond my confidence. That is what Human Review is for.'])}
-function openMapping(){
-  if(!S.done.sort)return talkReviewer();
-  if(S.done.mapping)return talkReviewer();
-  const st=DECIDE.map(()=>false);
-  const raw='ENT-01  22:20:14.382  badge=VB-0457  email=visitor@mail.example\n        invite=FDST-2F-1117  space=SPACE-2F-STUDIO\nENT-02  22:10:00.000  badge=null  invite=FDST-2F-1117\n        space=SPACE-2F-FUTURELAB';
-  openModal(`<div class="kick">B3 · HUMAN REVIEW</div><div class="ttl">Field mapping</div><p class="sub">Data Schema has mapped most fields. Three need your call. The Data Engineer signs whatever you decide.</p><div class="raw">${raw}</div>
-    <div class="auto mono">✓ time → event.time · kiosk → device.kiosk_id · invite → invitation.code</div>
-    ${DECIDE.map((d,j)=>`<div class="dec" id="dec${j}"><div class="dq"><span class="src">${d.src}</span><code>${d.f}=${d.v}</code></div><div class="dopts">${d.opts.map(([o,c])=>`<button class="dopt" data-j="${j}" data-o="${o}"><small>${c?'Data Schema suggests · '+c.toFixed(2):'Alternative'}</small>${o}</button>`).join('')}</div><div class="dmsg" id="dm${j}"></div></div>`).join('')}
-    <div id="mEnd"></div><div class="actions"><button class="btn go" id="mApprove" disabled>✓ APPROVE MAPPING</button></div>`,()=>{
-    mp.querySelectorAll('.dopt').forEach(b=>b.onclick=()=>{
-      const j=+b.dataset.j,d=DECIDE[j],m=$('#dm'+j);if(st[j])return;
-      if(b.dataset.o===d.ok){sfx.beep();st[j]=true;b.classList.add('ok');$('#dec'+j).classList.add('done');m.className='dmsg ok';m.textContent=d.good;$('#mApprove').disabled=!st.every(Boolean);if(st.every(Boolean)){learn('extract');$('#mEnd').innerHTML=conceptBox('extract')}}
-      else{sfx.err();b.classList.remove('no');void b.offsetWidth;b.classList.add('no');m.className='dmsg bad';m.textContent=d.by+': '+d.why+' Choose again.'}
-    });
-    $('#mApprove').onclick=()=>{closeModal();complete('mapping');gotClue(3);
-      say('schema3',["One more thing. I've never seen the room ID on your tap. Either it's new, or it's wrong.",'B2 keeps everything that ever arrived. Ask there.',{who:'triage',t:'B2 just lit up in the elevator. Shall we?'},{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'In a moment',end:true}]}])};
-  });
-}
+function talkSchema3(){say('schema3',['I extract fields from raw data automatically and map them onto one model, so every floor reads them the same way.',S.done.mapping?'Thanks for approving the one I was unsure about.':'One field on your taps is below my confidence. A person has to approve it.'])}
+function openMapping(){return S.done.mapping?talkReviewer():openSort()}
 
 /* ================= B2 · twins + promotion ================= */
 function introB2(){say('steward',["Everything that ever arrived lands here first, in capacity storage. Only what's promoted gets fast search, and the elevator only reads fast search.",{who:'enrich',t:"I went through retained history for your invitation code. I found it twice, and they're not quite identical."},{t:'',choices:[{l:'Show me',end:true,fn:()=>openTwins()},{l:'In a moment',end:true}]}])}
@@ -1748,182 +1921,171 @@ function talkEnrich(){
   say('enrich',['Your invitation code shows up twice in retained history. Want to see?',{t:'',choices:[{l:'Show me',end:true,fn:()=>openTwins()},{l:'Later',end:true}]}]);
 }
 function talkSteward(){say('steward',['Capacity storage is cheap and slow. Fast search costs $0.25 per GB per month, and the budget for this case is $25 a month.',S.done.promote?'Clean promotion. The studio record is in fast search now.':'Promotion needs a person to sign off on scope, retention and cost. That person is you.'])}
-const RECS=[
-  ['FDST-1F-1102','SPACE-1F-LOBBY','reception','Mon 09:12',0],
-  ['FDST-2F-1117','SPACE-2F-STUDIO','Yiyun Zhu','3 days ago · 14:05',1],
-  ['FDST-2F-1171','SPACE-2F-STUDIO','Yiyun Zhu','Yesterday · 10:02',0],
-  ['FDST-B3-1098','SPACE-B3-FACTORY','data-eng','Thu 08:30',0],
-  ['FDST-2F-1117','SPACE-2F-FUTURELAB','space-sync','Tonight · 22:10:00.000',2],
-  ['FDST-1F-1120','SPACE-1F-LOBBY','reception','Today · 13:45',0]
+const PROM=[
+  {k:'studio',h:'SPACE-2F-STUDIO',n:'Yiyun Zhu Studio',m:['Written by Yiyun Zhu · 3 days ago','Room: active','Now in: capacity storage only'],c:'+ $0.01 / month',ok:1},
+  {k:'lab',h:'SPACE-2F-FUTURELAB',n:'Future Lab · the copy',m:['Written by space-sync · tonight 22:10:00.000','Room: closed last week','Now in: capacity storage'],c:'+ $0.01 / month',no:"That's the copy a job wrote tonight, pointing at a closed room. Promote it and the ghost gets a fast-search entry."},
+  {k:'all',h:'EVERYTHING',n:"All of tonight's data",m:['Includes 4.2 GB a day of debug traces','Nobody searches most of it'],c:'+ $94 / month',no:'Fast search costs $0.25 per GB per month. Paying for data nobody searches is exactly what storage tiers avoid. Promote only what matters.'}
 ];
 function openTwins(){
   if(S.done.twins)return talkEnrich();
-  const sel=[];let stage=1;
-  openModal(`<div class="kick">B2 · RETAINED HISTORY</div><div class="ttl">Find the twins</div><p class="sub">Six raw invitation records from the Machine Data Lake. Find the two that share your code, <span class="mono">FDST-2F-1117</span>.</p>
-    <div class="tw"><div class="twh"><span>CODE</span><span>ROOM</span><span>CREATED BY</span><span>CREATED</span></div>${RECS.map((r,j)=>`<button class="twr" data-j="${j}"><span class="mono">${r[0]}</span><span class="mono">${r[1]}</span><span>${r[2]}</span><span>${r[3]}</span></button>`).join('')}</div>
-    <div class="msg" id="tMsg"></div><div id="tStage2"></div>`,()=>{
-    mp.querySelectorAll('.twr').forEach(b=>b.onclick=()=>{
-      if(stage!==1)return;const j=+b.dataset.j,r=RECS[j],m=$('#tMsg');
-      if(!r[4]){sfx.err();b.classList.remove('no');void b.offsetWidth;b.classList.add('no');m.className='msg bad';m.textContent='Enrichment: '+(r[0]==='FDST-2F-1171'?'Close, but look again: 1171, not 1117.':'Different code. Look for FDST-2F-1117 twice.');return}
-      if(sel.includes(j))return;sel.push(j);b.classList.add('sel');sfx.beep();m.className='msg ok';m.textContent=sel.length===1?'One found. Where is its twin?':'Both found. Same code, different rooms.';
-      if(sel.length===2){stage=2;stage2()}
+  openModal(`<div class="kick">B2 · MACHINE DATA LAKE · YOUR SIGN-OFF</div><div class="ttl">Which record goes to fast search?</div><p class="sub">Enrichment found your invitation code twice in the lake. The elevator only reads fast search, so whatever you promote is what it will see.</p>
+    <div class="prom">${PROM.map(o=>`<button class="pcard" data-k="${o.k}"><span class="ph mono">${o.h}</span><b>${o.n}</b>${o.m.map(x=>`<small>${x}</small>`).join('')}<span class="pc">${o.c}</span></button>`).join('')}</div>
+    <div class="msg" id="pMsg"></div><div id="pEnd"></div>`,()=>{
+    mp.querySelectorAll('.pcard').forEach(b=>b.onclick=()=>{
+      if($('#pDone'))return;const o=PROM.find(x=>x.k===b.dataset.k),m=$('#pMsg');
+      if(!o.ok){sfx.err();shake(b);m.className='msg bad';m.textContent='Storage Steward: '+o.no+' Choose again.';return}
+      sfx.ok();learn('lake');learn('tier');b.classList.add('chosen');mp.querySelectorAll('.pcard').forEach(x=>x.disabled=true);
+      m.className='msg ok';m.textContent='Promoted for one cent a month. The studio record is in fast search now, signed by you.';
+      $('#pEnd').innerHTML=`<div class="kick" style="margin-top:16px;color:var(--amber)">CLUE 4 · TWO 2Fs</div><div class="tscroll"><table class="cmp"><tr><th>Room</th><th>Name</th><th>Status</th><th>Stored in</th><th>Changed</th></tr><tr><td class="mono">SPACE-2F-FUTURELAB</td><td>Future Lab</td><td>Closed</td><td>Fast search</td><td>Last Thu 22:10</td></tr><tr><td class="mono">SPACE-2F-STUDIO</td><td>Yiyun Zhu Studio</td><td>Active</td><td class="hl">Capacity storage only, until now</td><td>Last Thu 22:10</td></tr></table></div>${conceptBox('tier')}<div class="actions"><button class="btn go" id="pDone">Collect clue 4</button></div>`;
+      $('#pDone').onclick=()=>{closeModal();complete('twins');complete('promote');gotClue(4);viNote('b2');
+        say('triage',['Same night, same minute. One job renamed the floor and only finished half the work.',{who:'engineer',t:'Your call, my signature. B1 can see the studio now.'},{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'Recap this floor · 30 sec',end:true,fn:()=>startTour({grp:'b2'})},{l:'In a moment',end:true}]}])};
     });
   });
-  const stage2=()=>{
-    $('#tStage2').innerHTML=`<div class="kick" style="margin-top:16px">WHICH ONE IS REAL?</div><div class="grid2" style="margin-top:8px">
-      <button class="card pick" data-r="2"><h4 class="mono" style="font-size:13px">SPACE-2F-FUTURELAB</h4><p>Created by space-sync · tonight 22:10:00.000</p></button>
-      <button class="card pick" data-r="1"><h4 class="mono" style="font-size:13px">SPACE-2F-STUDIO</h4><p>Created by Yiyun Zhu · 3 days ago</p></button></div><div class="msg" id="tMsg2"></div><div id="tEnd"></div>`;
-    mp.querySelectorAll('.pick').forEach(b=>b.onclick=()=>{const m=$('#tMsg2');
-      if(b.dataset.r==='2'){sfx.err();shake(b);m.className='msg bad';m.textContent="Enrichment: That one was written by a job tonight, and its room was shut down last week. Choose again.";return}
-      sfx.ok();b.classList.add('chosen');mp.querySelectorAll('.pick').forEach(x=>x.disabled=true);m.className='msg ok';m.textContent='Right. Yiyun wrote that one, for her new studio.';
-      $('#tEnd').innerHTML=`<div class="kick" style="margin-top:16px;color:var(--amber)">CLUE 4 · TWO 2Fs</div><div class="tscroll"><table class="cmp"><tr><th>Room</th><th>Name</th><th>Status</th><th>Stored in</th><th>Changed</th></tr><tr><td class="mono">SPACE-2F-FUTURELAB</td><td>Future Lab</td><td>Decommissioned</td><td>Fast search</td><td>Last Thu 22:10</td></tr><tr><td class="mono">SPACE-2F-STUDIO</td><td>Yiyun Zhu Studio</td><td>Active</td><td class="hl">Capacity storage only</td><td>Last Thu 22:10</td></tr></table></div>${conceptBox('lake')}<div class="actions"><button class="btn go" id="tDone">Collect clue 4</button></div>`;learn('lake');
-      $('#tDone').onclick=()=>{closeModal();complete('twins');gotClue(4);say('triage',['Same night, same minute. One job renamed the floor and only finished half the work.',{who:'engineer',t:"Then let's put the studio where the elevator can see it. Promotion needs your sign-off."},{t:'',choices:[{l:'Open the promotion',end:true,fn:()=>openPromotion()},{l:'In a moment',end:true}]}])};
-    });
-  };
 }
-const DS2=[
-  ['reg','Space registry','Where every room in the tower is listed',.01,true],
-  ['inv','Invitations','Who invited whom, and to which room',.05,true],
-  ['door','Door events','Every badge tap at every door',.6,true],
-  ['ent2','ENT-02 kiosk logs','What the old east kiosk did tonight',.02,true],
-  ['dbg','Debug traces','Verbose debug output from every service',4.2,false],
-  ['copy',"Tonight's space-sync copies",'The ghost records written at 22:10',.001,false]
-];
 function talkEngineer(){
-  if(!S.done.twins)return say('engineer',["Before I promote anything, I need to know which records are real. Enrichment is at Retained History."]);
-  if(S.done.promote)return say('engineer',['Promotion signed. The studio record is in fast search, and B1 can see it now.']);
-  openPromotion();
+  if(!S.done.twins)return say('engineer',["Nothing gets promoted to fast search without a person's sign-off. Enrichment found two records for your code. Pick the right one.",{t:'',choices:[{l:'Show me',end:true,fn:()=>openTwins()},{l:'Later',end:true}]}]);
+  say('engineer',['Promotion signed. The studio record is in fast search, and B1 can see it now.']);
 }
-function openPromotion(){
-  if(!S.done.twins||S.done.promote)return talkEngineer();
-  const days=90;
-  openModal(`<div class="kick">B2 · PROMOTION · YOUR SIGN-OFF</div><div class="ttl">Promote what the case needs</div><p class="sub">Tick the data the case needs in fast search. Fast search costs $0.25 per GB per month and the budget is $25 a month, kept for ${days} days.</p>
-    <div style="margin-top:10px">${DS2.map(([k,n,d,g])=>`<label class="chk"><input type="checkbox" id="ds_${k}"><span style="min-width:0">${n}<small class="dsd">${d}</small></span><span class="gb">${g>=.01?g+' GB/day':'tiny'}</span></label>`).join('')}</div>
-    <div style="margin-top:14px"><div class="kick" style="color:var(--mute);display:flex;justify-content:space-between">MONTHLY COST<span class="mono" style="color:var(--fg)" id="costV"></span></div><div class="meter" style="margin-top:8px"><i id="costBar"></i><b id="budgetMark"></b></div></div>
-    <div class="msg" id="pMsg"></div><div id="pEnd"></div><div class="actions" id="pAct"><button class="btn go" id="pApprove">✓ SIGN OFF PROMOTION</button></div>`,()=>{
-    const calc=()=>{let g=0;DS2.forEach(([k,,,gb])=>{if($('#ds_'+k).checked)g+=gb});const cost=g*days*.25;
-      $('#costV').textContent='$'+cost.toFixed(2)+' / month';const bar=$('#costBar');bar.style.width=Math.min(100,cost/60*100)+'%';bar.classList.toggle('over',cost>25);$('#budgetMark').style.left=(25/60*100)+'%';return cost};
-    mp.querySelectorAll('input').forEach(x=>x.addEventListener('input',()=>{calc();$('#pMsg').textContent=''}));calc();
-    $('#pApprove').onclick=()=>{const cost=calc(),m=$('#pMsg'),on=k=>$('#ds_'+k).checked;
-      const no=x=>{sfx.err();m.className='msg bad';m.textContent='Storage Steward: '+x};
-      if(on('copy'))return no("Leave tonight's copies out. Promote them and the ghost gets a fast-search entry too.");
-      if(on('dbg'))return no('Debug traces would cost about $94 a month, and the case does not need them. Leave them in the lake.');
-      const miss=DS2.filter(d=>d[4]&&!on(d[0])).map(d=>d[1]);
-      if(miss.length)return no(`The case still needs: ${miss.join(', ')}.`);
-      sfx.ok();learn('tier');m.className='msg ok';m.textContent=`Signed: $${cost.toFixed(2)} a month.`;mp.querySelectorAll('input').forEach(x=>x.disabled=true);
-      $('#pEnd').innerHTML=conceptBox('tier');$('#pAct').innerHTML='<button class="btn go" id="pDone">Done</button>';
-      $('#pDone').onclick=()=>{closeModal();complete('promote');
-        say('engineer',['Your call. I sign. The studio record is in fast search now.',{who:'triage',t:'B1 is lit. Time to connect the dots.'},{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'In a moment',end:true}]}])};
-    };
-  });
-}
+function openPromotion(){return openTwins()}
 
 /* ================= B1 · draw the links ================= */
 function talkSchema1(){
-  if(!S.talked.b1){S.talked.b1=1;save();return say('schema1',["Records live downstairs. Here we keep how they relate.","Draw the lines yourself. I'll only check that they hold.","I've also put two suggestions of my own on the graph. I'm not so sure about either.",{t:'',choices:[{l:'Open the graph',end:true,fn:()=>openGraphGame()},{l:'In a moment',end:true}]}])}
-  say('schema1',[S.done.graph?'Every link holds, and you rejected both of my weak suggestions. Same code and close timing are not proof.':'The Entity Graph is waiting. Draw the links that hold, and reject the ones that do not.',{t:'',choices:[{l:S.done.graph?'Show the timeline':'Open the graph',end:true,fn:()=>S.done.graph?openTimeline():openGraphGame()},{l:'Later',end:true}]}]);
+  if(!S.talked.b1){S.talked.b1=1;save();return say('schema1',["Records live downstairs. Here we keep how they relate, and where each one came from.","Three links are missing from your story. Fill them in and the timeline writes itself.",{t:'',choices:[{l:'Open the graph',end:true,fn:()=>openGraphGame()},{l:'In a moment',end:true}]}])}
+  say('schema1',[S.done.graph?'Every link holds. The lineage shows the other you was written by a job, not a person.':'Three links are missing on the Entity Graph. Fill them in.',{t:'',choices:[{l:S.done.graph?'Show the timeline':'Open the graph',end:true,fn:()=>S.done.graph?openTimeline():openGraphGame()},{l:'Later',end:true}]}]);
 }
-function talkInvest1(){say('invest1',[S.done.graph?'You rejected both of my weak suggestions. Good. Same code and close timing are not proof.':"My suggestions are on the graph, each with a confidence score. Accept or reject them. You make the call."])}
-function talkAnalyst(){say('analyst',[S.done.graph?'Eight links, all confirmed. That is a clean chain of evidence.':'I only confirm links that hold. Draw them on the Entity Graph and I will check each one as you go.',{t:'',choices:[{l:S.done.graph?'Show the timeline':'Open the graph',end:true,fn:()=>S.done.graph?openTimeline():openGraphGame()},{l:'Later',end:true}]}])}
+function talkInvest1(){talkSchema1()}
+function talkAnalyst(){say('analyst',[S.done.graph?'Every link confirmed. That is a clean chain of evidence.':'I confirm each link before anyone upstairs relies on it. Three are still missing on the Entity Graph.',{t:'',choices:[{l:S.done.graph?'Show the timeline':'Open the graph',end:true,fn:()=>S.done.graph?openTimeline():openGraphGame()},{l:'Later',end:true}]}])}
 const GN={you:['You',100,60],badge:['Badge VB-0457',100,190],tap1:['Main tap · 22:20',100,320],yiyun:['Yiyun Zhu',360,60],inv:['Invitation',360,190],studio:['SPACE-2F-STUDIO',360,320],sync:['space-sync job',620,60],copy:['Invitation copy',620,190],tap2:['East tap · 22:10',620,320],futurelab:['SPACE-2F-FUTURELAB',440,420]};
-const PROPS=[
-  ['you','badge','holds',.99,1],
-  ['badge','tap1','tapped at',.98,1],
-  ['you','tap2','tapped at',.48,0,"Only the invitation code matches. Your badge didn't exist at 22:10."],
-  ['yiyun','inv','sent',.97,1],
-  ['inv','studio','destination',.95,1],
-  ['studio','futurelab','renamed from',.91,1],
-  ['inv','futurelab','destination',.44,0,'Your invitation was written for the new studio, not the room that closed.'],
-  ['sync','copy','wrote',.93,1],
-  ['copy','futurelab','attached to',.9,1],
-  ['copy','tap2','checked in at',.88,1]
+const KNOWN=[['you','badge','holds'],['badge','tap1','tapped at'],['yiyun','inv','sent'],['inv','studio','destination'],['studio','futurelab','renamed from']];
+const LQ=[
+  {q:'Who wrote the second copy of your invitation?',o:[['you','You'],['sync','The space-sync job']],ok:'sync',a:['sync','copy','wrote'],no:'You were in the lobby with Triage. Look at who runs at exactly 22:10:00.000.'},
+  {q:'Which room does the copy point to?',o:[['studio','SPACE-2F-STUDIO'],['futurelab','SPACE-2F-FUTURELAB']],ok:'futurelab',a:['copy','futurelab','attached to'],no:'The real invitation points to the studio. The copy was written onto the old room.'},
+  {q:'Where was the copy checked in?',o:[['tap1','Main tap · 22:20, with your badge'],['tap2','East tap · 22:10, at dead kiosk ENT-02']],ok:'tap2',a:['copy','tap2','checked in at'],no:'Your badge was only issued at 22:19. The copy was checked in before that.'}
 ];
 function openGraphGame(){
   if(!S.done.promote)return say('schema1',['The graph reads fast search, and your case is not there yet. Finish the promotion on B2 first.']);
   if(S.done.graph)return openTimeline();
-  const st=PROPS.map(()=>null);
+  let q=0;const drawn=[];
   const svg=()=>{let s='';
-    PROPS.forEach(([x,y,r],j)=>{if(st[j]===false)return;const A1=GN[x],B1=GN[y],ok=st[j]===true,mx=(A1[1]+B1[1])/2,my=(A1[2]+B1[2])/2,vert=A1[1]===B1[1];
-      s+=`<line x1="${A1[1]}" y1="${A1[2]}" x2="${B1[1]}" y2="${B1[2]}" stroke="${ok?'#62d6ff':'rgba(148,171,196,.55)'}" stroke-width="${ok?2.5:1.5}" ${ok?'':'stroke-dasharray="5 5"'}/>`;
-      if(ok)s+=`<text x="${mx+(vert?8:0)}" y="${my-6}" ${vert?'':'text-anchor="middle"'} class="gl">${r}</text>`});
-    Object.entries(GN).forEach(([k,[l,x,y]])=>{s+=`<g class="gn"><rect x="${x-78}" y="${y-19}" width="156" height="38" rx="10"/><text x="${x}" y="${y+4}" text-anchor="middle">${l}</text></g>`});
+    const line=([x,y,r],fresh)=>{const A1=GN[x],B1=GN[y],mx=(A1[1]+B1[1])/2,my=(A1[2]+B1[2])/2,vert=A1[1]===B1[1];
+      return `<line ${fresh?'class="gnew"':''} x1="${A1[1]}" y1="${A1[2]}" x2="${B1[1]}" y2="${B1[2]}" stroke="${fresh?'#7dffc4':'#62d6ff'}" stroke-width="${fresh?3:2}"/><text x="${mx+(vert?8:0)}" y="${my-6}" ${vert?'':'text-anchor="middle"'} class="gl">${r}</text>`};
+    KNOWN.forEach(e=>s+=line(e));drawn.forEach(e=>s+=line(e,1));
+    const L=LQ[q],hot=L?new Set(['copy',...L.o.map(o=>o[0])]):new Set();
+    Object.entries(GN).forEach(([k,[l,x,y]])=>{s+=`<g class="gn${hot.has(k)?' hot':''}"><rect x="${x-78}" y="${y-19}" width="156" height="38" rx="10"/><text x="${x}" y="${y+4}" text-anchor="middle">${l}</text></g>`});
     return s};
-  const done=()=>st.every((v,j)=>v===(PROPS[j][4]===1));
-  openModal(`<div class="kick">B1 · ENTITY GRAPH</div><div class="ttl">Check the links</div><p class="sub">Investigation proposed ten links, shown as dashed lines. Confirm the ones that hold and reject the ones that don't. The confidence score is a hint.</p>
-    <div class="gwrap"><svg viewBox="0 0 720 450" id="gsvg" role="img" aria-label="Entity graph">${svg()}</svg></div>
-    <div class="props">${PROPS.map(([x,y,r,c],j)=>`<div class="gsug" id="gs${j}"><div style="min-width:0">${GN[x][0]} — <b>${r}</b> — ${GN[y][0]} <span class="pill ${c<.6?'low':''}">${c.toFixed(2)}</span><div class="dmsg" id="gsm${j}"></div></div><div class="decide"><button class="y" data-j="${j}" data-v="1">Confirm</button><button class="n" data-j="${j}" data-v="0">Reject</button></div></div>`).join('')}</div>
-    <div class="prog mono" id="gProg"></div><div id="gEnd"></div>`,()=>{
-    const prog=()=>{$('#gProg').textContent=`${st.filter(v=>v!==null).length} of ${PROPS.length} checked`;
-      if(done()&&!$('#gDone')){learn('graph');$('#gEnd').innerHTML=`<div class="msg ok" style="margin-top:12px">Every link holds. The timeline writes itself.</div>${conceptBox('graph')}<div class="actions"><button class="btn go" id="gDone">Collect clue 5</button></div>`;$('#gDone').onclick=()=>{closeModal();complete('graph');gotClue(5);openTimeline(true)}}};
-    mp.querySelectorAll('.decide button').forEach(b=>b.onclick=()=>{
-      const j=+b.dataset.j,v=b.dataset.v==='1',P=PROPS[j],mm=$('#gsm'+j);if(st[j]!==null)return;
-      const right=v===(P[4]===1);
-      if(!right){sfx.err();shake($('#gs'+j));mm.className='dmsg bad';mm.textContent=v?'Knowledge: '+P[5]+' Reject it.':'Knowledge: That one holds. The records back it up.';return}
-      st[j]=v;sfx.beep();b.classList.add('on');b.parentNode.querySelectorAll('button').forEach(x=>x.disabled=true);mm.className='dmsg ok';mm.textContent=v?'Confirmed.':'Rejected. It does not hold.';
-      $('#gsvg').innerHTML=svg();prog();
-    });
-    prog();
+  openModal(`<div class="kick">B1 · ENTITY GRAPH</div><div class="ttl">Fill in the missing links</div><p class="sub">Solid lines are already confirmed. Answer three questions to draw the rest.</p>
+    <div class="gwrap"><svg viewBox="0 0 720 450" id="gsvg" role="img" aria-label="Entity graph">${svg()}</svg></div><div id="gQ"></div><div id="gEnd"></div>`,()=>{
+    const ask=()=>{
+      if(q>=LQ.length)return end();const L=LQ[q];$('#gsvg').innerHTML=svg();
+      $('#gQ').innerHTML=`<div class="gq"><div class="kick">LINK ${q+1} OF ${LQ.length}</div><b>${L.q}</b><div class="vopts">${L.o.map(([k,t])=>`<button class="vopt" data-k="${k}">${t}</button>`).join('')}</div><div class="msg" id="gMsg"></div></div>`;
+      mp.querySelectorAll('#gQ .vopt').forEach(b=>b.onclick=()=>{const m=$('#gMsg');if(b.disabled)return;
+        if(b.dataset.k!==L.ok){sfx.err();shake(b);m.className='msg bad';m.textContent='Knowledge: '+L.no;return}
+        sfx.beep();b.classList.add('right');mp.querySelectorAll('#gQ .vopt').forEach(x=>x.disabled=true);drawn.push(L.a);q++;$('#gsvg').innerHTML=svg();setTimeout(ask,550)});
+    };
+    const end=()=>{learn('graph');$('#gQ').innerHTML='';
+      $('#gEnd').innerHTML=`<div class="msg ok" style="margin-top:12px">Every link holds. The lineage points to one culprit: the space-sync job.</div>${conceptBox('graph')}<div class="actions"><button class="btn go" id="gDone">Collect clue 5</button></div>`;
+      $('#gDone').onclick=()=>{closeModal();complete('graph');gotClue(5);viNote('b1');openTimeline(true)}};
+    ask();
   });
 }
 function openTimeline(fresh){
   if(!S.clues[5])return info('B1 · KNOWLEDGE GRAPH','Timeline','The timeline comes together once every link on the Entity Graph is drawn.');
   const ev=[['Tonight 22:20:14','You tap your badge at the main door, ENT-01'],['Tonight 22:19','Triage issues your visitor badge VB-0457'],['Tonight 22:10:00.000','space-sync copies your invitation onto the closed room. The dead ENT-02 kiosk checks the copy in.'],['3 days ago','Yiyun Zhu sends your invitation to her new studio, SPACE-2F-STUDIO'],['Last Thursday 22:10','space-sync renames 2F but only finishes half the job. It repeats the same mistake every night.']];
   openModal(`<div class="kick" style="color:var(--amber)">CLUE 5 · THE TIMELINE</div><div class="ttl">What happened, newest first</div>${ev.map(([t,a])=>`<div class="lrow"><div class="t"><span class="mono" style="color:var(--cyan)">${t}</span><small style="font-size:13px;color:var(--fg)">${a}</small></div></div>`).join('')}${fresh?'<div class="actions"><button class="btn go" id="tlGo">Take it to the Lead</button></div>':''}`,()=>{
-    const b=$('#tlGo');if(b)b.onclick=()=>{closeModal();say('triage',['Nobody stole your invitation. A job did this, every night at 22:10.',"That's all five clue cards. Let's take it to the Investigation Lead on 1F.",{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'In a moment',end:true}]}])}});
+    const b=$('#tlGo');if(b)b.onclick=()=>{closeModal();say('triage',['Nobody stole your invitation. A job did this, every night at 22:10.',"That's all five clue cards. Let's take it to the Investigation Lead on 1F.",{t:'',choices:[{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'Recap this floor · 30 sec',end:true,fn:()=>startTour({grp:'b1'})},{l:'In a moment',end:true}]}])}});
 }
 
 /* ================= 1F · final deduction ================= */
-const QS=[
-  {q:'Why could the elevator not see 2F?',opts:['2F is closed for renovation','The new studio record stayed in low-cost storage and was never promoted','Your badge does not have access'],ok:1,no:{0:'The studio is active. Yiyun is up there tonight.',2:'Your badge was never the problem. Look at where the studio record ended up on B2.'},k:'tier'},
-  {q:'Who was the other you?',opts:['Someone who stole your invitation code','A copy of your invitation written by the space-sync job','A cloned visitor badge'],ok:1,no:{0:'Nobody else was there. The tap came at exactly 22:10:00.000, when the job runs.',2:'The other tap had no badge at all.'},k:'graph'},
-  {q:'How did the case get solved?',opts:['The agents fixed everything on their own','Agents proposed each step, and you approved every change','Nobody touched it. The tower fixed itself'],ok:1,no:{0:'Agents did the legwork, but none of them changed data without your sign-off.',2:'Every fix tonight was a decision someone made.'},k:'agents'}
-];
+const VQ={q:'So what made 2F disappear?',opts:['Someone stole your invitation code and tried to get in first','A nightly job renamed 2F, never promoted the new studio record, and copied your invitation onto the closed room','Your badge does not have access to 2F'],ok:1,no:{0:'Nobody else was there. The other tap came at exactly 22:10:00.000, when the job runs.',2:'Your badge was never the problem. The elevator simply could not see the studio record.'}};
 function presentCase(){
   if(!S.done.graph||S.verified)return talkLead();
-  say('collie',["Before you start: a tap with no badge, at a dead kiosk, at an exact time. That looks like spoofing to me."],()=>say('lead',["Let's see what the evidence says. Three questions."],()=>openVerdict()));
+  say('collie',["Before you start: a tap with no badge, at a dead kiosk, at an exact time. That looks like spoofing to me."],()=>say('lead',["Let's see what the evidence says. One question."],()=>openVerdict()));
 }
 function openVerdict(){
   if(!S.done.graph||S.verified)return talkLead();
-  let step=0;
-  const render=()=>{
-    const Q=QS[step];
-    mp.innerHTML=`<button class="x" aria-label="Close">×</button><div class="kick">1F · CASE BOARD · QUESTION ${step+1} OF 3</div><div class="ttl">${Q.q}</div>
-      <div class="vopts">${Q.opts.map((o,j)=>`<button class="vopt" data-o="${j}">${o}</button>`).join('')}</div><div class="msg" id="vMsg"></div><div id="vEnd"></div>`;
-    mp.querySelector('.x').onclick=closeModal;
+  openModal(`<div class="kick">1F · CASE BOARD · YOUR CALL</div><div class="ttl">${VQ.q}</div><div class="clues mini" style="margin-top:12px">${[1,2,3,4,5].map(clueMini).join('')}</div>
+    <div class="vopts">${VQ.opts.map((o,j)=>`<button class="vopt" data-o="${j}">${o}</button>`).join('')}</div><div class="msg" id="vMsg"></div><div id="vEnd"></div>`,()=>{
     mp.querySelectorAll('.vopt').forEach(b=>b.onclick=()=>{
       if($('#vNext'))return;const j=+b.dataset.o,m=$('#vMsg');
-      if(j!==Q.ok){sfx.err();shake(b);m.className='msg bad';m.textContent='Investigation Lead: '+Q.no[j]+' Try again.';return}
-      sfx.ok();b.classList.add('sel','right');mp.querySelectorAll('.vopt').forEach(x=>x.disabled=true);m.className='msg ok';m.textContent='Investigation Lead: Agreed.';learn(Q.k);
-      $('#vEnd').innerHTML=conceptBox(Q.k)+`<div class="actions"><button class="btn go" id="vNext">${step<2?'Next question':'Close the case'}</button></div>`;
-      $('#vNext').onclick=()=>{step++;if(step>2)finishCase();else render()};
+      if(j!==VQ.ok){sfx.err();shake(b);m.className='msg bad';m.textContent='Investigation Lead: '+VQ.no[j]+' Try again.';return}
+      sfx.ok();b.classList.add('sel','right');mp.querySelectorAll('.vopt').forEach(x=>x.disabled=true);m.className='msg ok';m.textContent='Investigation Lead: Agreed. And every fix tonight was signed by a person: you.';learn('agents');
+      $('#vEnd').innerHTML=conceptBox('agents')+`<div class="actions"><button class="btn go" id="vNext">Close the case</button></div>`;
+      $('#vNext').onclick=()=>finishCase();
     });
-  };
-  openModal('',()=>render());
+  });
 }
 function finishCase(){
-  S.verified=true;save();closeModal();sfx.stamp();renderHUD();renderHS();
+  S.verified=true;save();closeModal();sfx.stamp();renderHUD();renderHS();viNote('f1');
   say('lead',['Case closed. Promote the studio record, retire the copy, and fix the job before it runs again tonight.',{who:'collie',t:'Every night at 22:10. Fine. That was a job, not a person. Flag withdrawn.'},{who:'triage',t:'Your badge just turned green. And listen.'}],()=>{
     sfx.ding();toast('2F has appeared in the elevator');
-    setTimeout(()=>say('triage',['2F is back on the panel. Someone has been waiting for you up there.','But first, look at the Value Insights wall again. Your fix is already on it.',{t:'',choices:[{l:'Show me the wall',end:true,fn:()=>openInsights()},{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'In a moment',end:true}]}]),900);
+    setTimeout(()=>say('triage',['2F is back on the panel. Someone has been waiting for you up there.','But first, look at the Value Insights wall again. Every number on it has moved.',{t:'',choices:[{l:'Show me the wall',end:true,fn:()=>openInsights()},{l:'Call the elevator',end:true,fn:()=>openLift()},{l:'In a moment',end:true}]}]),900);
   });
 }
 
-/* ================= 2F · Yiyun Zhu Studio ================= */
+/* ================= 2F · the architect's studio ================= */
 function arriveF2(){
-  say('triage',['This is as far as I go. Your badge is green, and someone has been waiting for you.'],()=>say('yiyun',[
-    'You found my floor. Everything you just did, agents proposing and you deciding, is what I designed this tower for.',
-    'Have a look around. My About Me panel tells you how I got here, and the two stands show ideas behind the tower. Agent Governance on my desk is the control room for every agent you met.',
-    'And before you go, I would love your feedback on this work. It helps me make the next one better.',
-    {t:'',choices:[{l:'About you',end:true,fn:()=>openAbout()},{l:'How can I reach you?',end:true,fn:()=>openContact()},{l:"I'll look around",end:true}]}]));
+  say('triage',['This is as far as I go. Your badge is green, and the architect has been waiting for you.'],()=>say('yiyun',[
+    "Welcome to the studio, {name}. I'm Yiyun Zhu, and I designed this tower.",
+    'Everything you just did, agents proposing and you deciding, follows a short set of design principles for AI. They are on the Design Notes panel to my left.',
+    'The two stands are concept designs for what comes next. And before you go, I would love your feedback on the experience.',
+    {t:'',choices:[{l:'Show me the design principles',end:true,fn:()=>openArchitect(1)},{l:'Why build a tower?',end:true,fn:()=>openArchitect(0)},{l:"I'll look around",end:true}]}]));
 }
-function talkYiyun(){say('yiyun',['Thanks for solving my little mystery, {name}.',{t:'What would you like to see?',choices:[{l:'About you',end:true,fn:()=>openAbout()},{l:'The three concepts',end:true,fn:()=>openConcept(0)},{l:'Agent Governance',end:true,fn:()=>openGovernance()},{l:'How can I reach you?',end:true,fn:()=>openContact()},{l:'Leave feedback on this work',end:true,fn:()=>openGuestbook()}]}])}
-function talkGolden(){say('golden',["Each stand is one idea behind this tower. Start with Agentic Experience. You've just lived it.",{t:'',choices:[{l:'Show me',end:true,fn:()=>openConcept(1)},{l:'Later',end:true}]}])}
-function talkPM(){say('pm',['I came for the tour and stayed for the mystery. Have you seen the three stands yet?'])}
-function talkVisitorsB(){say('visitorB',['So that was you at the door earlier? We watched 2F light up on the elevator panel.',{who:'triage',t:'It was. Credit to the guest investigator.'}])}
+function talkYiyun(){say('yiyun',['Thanks for walking through the tower, {name}.',{t:'What would you like to see?',choices:[{l:'Why build a tower?',end:true,fn:()=>openArchitect(0)},{l:'Design principles for AI',end:true,fn:()=>openArchitect(1)},{l:'The concept designs',end:true,fn:()=>openArchitect(2)},{l:'Agent Governance',end:true,fn:()=>openGovernance()},{l:'Give feedback on the experience',end:true,fn:()=>openGuestbook()}]}])}
+function talkGolden(){say('golden',["Each stand is one idea behind this tower.",{t:'',choices:[{l:'Show me',end:true,fn:()=>openArchitect(2)},{l:'Later',end:true}]}])}
+function talkPM(){say('pm',['I came for the tour and stayed for the mystery.'])}
+function talkVisitorsB(){say('visitorB',['So that was you at the door earlier? We watched 2F light up on the elevator panel.'])}
 const TBA=(t,d)=>`<div class="tba"><b>To be added</b>${t}${d?`<span>${d}</span>`:''}</div>`;
-function openAbout(){openModal(`<div class="kick">2F · YIYUN ZHU STUDIO</div><div class="ttl">Yiyun Zhu</div><p class="sub">Architect of Future Data Search Tower.</p>${TBA('Short bio')}${TBA('Experience','Roles and dates, newest first')}${TBA('Skills and selected projects')}<div class="actions"><button class="btn go" id="aC">Contact Yiyun</button><button class="btn" id="aK">The three concepts</button></div>`,()=>{$('#aC').onclick=openContact;$('#aK').onclick=()=>openConcept(0)})}
-function openConcept(i){const c=CONCEPTS[i];openModal(`<div class="kick">2F · CONCEPT 0${i+1} OF 03</div><div class="ttl">${c.k}</div><div class="here"><div class="kick" style="color:var(--mute)">IN THIS TOWER</div><p>${c.here}</p></div>${TBA('Case study','The problem, the approach, the outcome and images')}<div class="actions">${i<2?'<button class="btn" id="cN">Next concept →</button>':''}<button class="btn go" id="cC">Contact Yiyun</button></div>`,()=>{const n=$('#cN');if(n)n.onclick=()=>openConcept(i+1);$('#cC').onclick=openContact})}
-function openContact(){openModal(`<div class="kick">2F · CONTACT</div><div class="ttl">Get in touch with Yiyun</div><div class="contact"><div class="crow"><span class="cl">LinkedIn</span><span class="ph">Link to be added</span></div><div class="crow"><span class="cl">Email</span><span class="ph">Address to be added</span></div></div>`)}
+const WHY_FLOORS=[
+  ['2F','Studio','Design & govern',['yiyun']],
+  ['1F','Reception & operations','Decide',['triage','collie','dachs','lead']],
+  ['B1','Knowledge graph','Connect',['schema1','analyst']],
+  ['B2','Machine Data Lake','Store & promote',['enrich','steward','engineer']],
+  ['B3','Data Factory','Ingest & sort',['guider','processing','schema3','reviewer']]
+];
+const WHY=[
+  ['Make the flow visible','Data enters at the bottom and turns into a decision at the top. Every floor is one layer of Cisco Data Fabric you can stand in.'],
+  ['One small story, end to end','A single badge that will not open a door touches every layer. Following it shows how the layers depend on each other.'],
+  ['Feel it, do not read it','Agents do the legwork on every floor, but you make every call. The idea lands because you live it.']
+];
+const PICON={
+  decide:'<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/>',
+  sure:'<path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16l4.5-4.5"/><circle cx="12" cy="16" r="1.2"/>',
+  hand:'<path d="M5 8h12l-3-3"/><path d="M19 16H7l3 3"/>',
+  bound:'<path d="M12 3l7 3v6c0 4.2-3 7.2-7 9-4-1.8-7-4.8-7-9V6z"/>',
+  trail:'<circle cx="5" cy="18" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="6" r="1.6"/><path d="M6.3 16.8l4.4-3.6M13.3 10.8l4.4-3.6" stroke-dasharray="2 2"/>',
+  beside:'<circle cx="8.5" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.4"/><path d="M3.5 20c.6-3.4 2.6-5.5 5-5.5s4.4 2.1 5 5.5M13.5 19.5c.4-2.6 1.6-4.2 3-4.2s2.6 1.6 3 4.2"/>'
+};
+const PRINCIPLES=[
+  ['decide','Agents propose, people decide','No agent changes data on its own. Every change carries the name of the person who approved it.','reviewer','B3 · B2 · 1F','Mapping, promotion and verdict were all signed by a person.'],
+  ['sure','Say how sure you are','Every suggestion shows its confidence, so people know when to trust it and when to look closer.','schema3','B3','Data Schema marked the studio field 0.61.'],
+  ['hand','Hand over when unsure','Low confidence is a reason to ask a person, not to guess quietly.','reviewer','B3','The uncertain field went to Human Review.'],
+  ['bound','Same boundaries as people','Agents work inside the access of the people they work for, and nothing more.','collie','1F','Threat Hunting flags. It never changes data.'],
+  ['trail','Leave a trail','Every action is logged with where it came from and what changed it, so any result can be explained.','schema1','B1','Lineage proved the other tap came from a job.'],
+  ['beside','Stay beside the person','Agents are companions, not autopilots. You can always ask where you are and what comes next.','triage','Every floor','Triage walked with you and never decided for you.']
+];
+function openArchitect(tab=0){
+  const tabs=['Why this tower','Design principles for AI','Concept designs'];
+  const av=id=>`<span class="nav" title="${C[id].n}">${avatarHTML(id)}</span>`;
+  const body=[
+    ()=>`<blockquote class="nq">A data platform is hard to explain on a slide. So I designed one you can walk through.</blockquote>
+      <div class="whyg"><div class="ntower" aria-label="Cross-section of the tower">
+        <div class="nflow"><span>DECISION</span><i></i><span>ONE BADGE TAP</span></div>
+        ${WHY_FLOORS.map(([c,n,v,a])=>`<div class="nfl"><b>${c}</b><div class="nfn"><span>${v}</span><small>${n}</small></div><div class="navs">${a.map(av).join('')}</div></div>`).join('')}
+      </div>
+      <div class="nint">${WHY.map(([t,d],i)=>`<div class="ni"><span class="nn">0${i+1}</span><div><b>${t}</b><p>${d}</p></div></div>`).join('')}</div></div>
+      <div class="nsig"><span></span>Yiyun Zhu · Architect, Future Data Search Tower</div>`,
+    ()=>`<blockquote class="nq">Agents do the legwork. People make the call.</blockquote>
+      <div class="nprin">${PRINCIPLES.map(([ic,t,d,who,fl,ev],i)=>`<div class="np"><div class="nph"><span class="npi"><svg viewBox="0 0 24 24">${PICON[ic]}</svg></span><span class="npn">0${i+1}</span></div><b>${t}</b><p>${d}</p><div class="npe">${av(who)}<div><span class="npf">${fl}</span><small>${ev}</small></div></div></div>`).join('')}</div>`,
+    ()=>`<blockquote class="nq">What comes next, sketched from what you just walked through.</blockquote><div class="cds">${CONCEPTS.map((c,i)=>`<button class="cd" data-i="${i}"><span>CONCEPT 0${i+1}</span><b>${c.k}</b><small>${c.here}</small><em>Open →</em></button>`).join('')}</div>`
+  ];
+  openModal(`<div class="kick">2F · FROM THE ARCHITECT</div><div class="ttl">${tabs[tab]}</div><div class="atabs" role="tablist">${tabs.map((t,i)=>`<button role="tab" aria-selected="${i===tab}" data-t="${i}" class="${i===tab?'on':''}">${t}</button>`).join('')}</div>${body[tab]()}`,()=>{
+    mp.classList.add('note');
+    mp.querySelectorAll('.atabs button').forEach(b=>b.onclick=()=>{sfx.click();openArchitect(+b.dataset.t)});
+    mp.querySelectorAll('.cd').forEach(b=>b.onclick=()=>{sfx.click();openConcept(+b.dataset.i)});
+  });
+}
+function openAbout(){openArchitect(0)}
+function openConcept(i){const c=CONCEPTS[i];openModal(`<div class="kick">2F · CONCEPT DESIGN 0${i+1} OF 0${CONCEPTS.length}</div><div class="ttl">${c.k}</div><div class="here"><div class="kick" style="color:var(--mute)">IN THIS TOWER</div><p>${c.here}</p></div><div class="actions">${i<CONCEPTS.length-1?'<button class="btn" id="cN">Next concept →</button>':''}<button class="btn" id="cB">All design notes</button></div>`,()=>{mp.classList.add('note');const n=$('#cN');if(n)n.onclick=()=>openConcept(i+1);$('#cB').onclick=()=>openArchitect(2)})}
 function openCaseReport(){
   if(!S.verified)return info('2F · CASE REPORT','Case report','The case report is written once the case is closed.');
   const nL=LEARN_ORDER.filter(k=>S.learned&&S.learned[k]).length;
@@ -1932,14 +2094,93 @@ function openCaseReport(){
     <div class="clues mini">${[1,2,3,4,5].map(clueMini).join('')}</div>
     <div class="verdict"><div class="vk">VERDICT</div><p><b>Culprit: the space-sync job, every night at 22:10.</b></p><p>It renamed Future Lab to Yiyun Zhu Studio but never promoted the new record, then copied your invitation onto the closed room.</p></div>
     <details class="learnd"><summary>What you learned about Cisco Data Fabric · ${nL} idea${nL===1?'':'s'}</summary>${learnedList()}</details>
-    <div class="actions" style="margin-top:0"><button class="btn go" id="rNote">Leave your feedback</button><button class="btn" id="rC">Contact Yiyun</button><button class="btn" id="rAgain">Start a new tour</button></div></div>`,()=>{$('#rC').onclick=openContact;$('#rNote').onclick=openGuestbook;$('#rAgain').onclick=()=>confirmRestart()});
+    <div class="actions" style="margin-top:0"><button class="btn go" id="rNote">Leave your feedback</button><button class="btn" id="rC">Design principles for AI</button><button class="btn" id="rAgain">Start a new tour</button></div></div>`,()=>{$('#rC').onclick=()=>openArchitect(1);$('#rNote').onclick=openGuestbook;$('#rAgain').onclick=()=>confirmRestart()});
 }
+
+/* ================= guided tour: Triage walks the badge story through every floor ================= */
+const TOUR_STOPS=[
+  {g:'ent',sc:'entrance',l:'Triage',who:'triage',h:'Welcome to the tower',t:"I'm Triage. On this tour I'll show you how Cisco Data Fabric works, floor by floor, by following one small incident: a visitor badge that didn't work. You'll meet every agent on the way."},
+  {g:'ent',sc:'entrance',l:'Check-in Kiosk',who:'triage',h:'Where it starts',t:"Tonight a guest tapped her badge here. Her invitation was real, but the kiosk said: destination not found. 2F isn't in the directory. Let's follow that one tap through the tower."},
+  {g:'f1',sc:'f1',l:'Triage',who:'triage',h:'1F · Triage',t:"This is my desk. I route every incoming signal to the right floor and escort guests. I can read everything in the tower but change nothing, so I took the failed tap and walked the guest in myself.",ag:'Routes signals · read only'},
+  {g:'f1',sc:'f1',l:'Threat Hunting',who:'collie',h:'1F · Threat Hunting',t:"I watch door events for anything that doesn't fit. Tonight I flagged a second tap with the guest's code, at a dead kiosk, at exactly 22:10:00.000. I raise the flag. A person decides what it means.",ag:'Flags anomalies · read only'},
+  {g:'f1',sc:'f1vi',vi:'before',who:'triage',h:'Value Insights · before',t:"This wall shows what the tower's data is worth tonight. Every amber number is waiting on a floor below: decisions waiting on a person, a space missing from fast search, a ghost record. Watch them change."},
+  {g:'b3',sc:'b3',l:'Guider',who:'guider',h:'B3 · Guider',t:"I onboard new data sources: the kiosks, the door controllers, the visitor directory. Some data never has to move at all. Federated search queries it where it already lives, in places like Amazon S3 or Snowflake.",k:'fed',ag:'Connects sources · approval by Data Engineer'},
+  {g:'b3',sc:'b3',l:'Processing',who:'processing',h:'B3 · Processing',t:"I turn the raw stream into clean events: logs, metrics and traces. The guest's tap left three: a log of the tap, a metric counting two taps with her code, and a trace where the studio lookup returned 404.",k:'melt',ag:'Sorts the stream · flags go to a person'},
+  {g:'b3',sc:'b3',l:'Data Schema',who:'schema3',h:'B3 · Data Schema',t:"I extract fields automatically and map every source onto one model, so every floor reads them the same way. Each mapping carries my confidence. I was only 61% sure about the studio ID, so I didn't guess. I asked a person.",k:'extract',ag:'Proposes field maps · approval by Data Engineer'},
+  {g:'b3',sc:'b3',l:'Human Review',who:'reviewer',h:'B3 · Human Review',t:"When an agent is unsure, it comes to me. I approved the studio ID mapping and my name is logged with it. Agents do the volume; people own the calls."},
+  {g:'b2',sc:'b2',l:'Enrichment',who:'enrich',h:'B2 · Enrichment',t:"Everything that arrives lands in the Machine Data Lake, in open formats, searchable at any age. I join history to new records. That's how I found the guest's invitation twice: the real one, and a copy pointing at a room that closed last week.",k:'lake',ag:'Joins history · read and propose'},
+  {g:'b2',sc:'b2',l:'Storage Steward',who:'steward',h:'B2 · Storage Steward',t:"I watch what gets searched and propose what earns fast search. Everything else stays in low-cost capacity storage. The new studio record was never promoted, and the elevator only reads fast search. Promoting it costs one cent a month.",k:'tier',ag:'Proposes promotions · approval by Storage Engineer'},
+  {g:'b2',sc:'b2',l:'Storage Engineer',who:'engineer',h:'B2 · Storage Engineer',t:"The Steward proposes, I sign. Promoting only the studio record was a one-cent decision. Promoting everything would have cost $94 a month for data nobody searches."},
+  {g:'b1',sc:'b1',l:'Knowledge',who:'schema1',h:'B1 · Knowledge',t:"I keep how records relate and where each one came from. I propose links with a confidence score. Following the lineage shows the second tap was a copy written by the nightly space-sync job. Not a person.",k:'graph',ag:'Proposes links · approval by Graph Analyst'},
+  {g:'b1',sc:'b1',l:'Graph Analyst',who:'analyst',h:'B1 · Graph Analyst',t:"Knowledge proposes, I confirm. Only links that hold go into the graph, because every floor upstairs relies on them."},
+  {g:'case',sc:'f1',l:'Investigation',who:'dachs',h:'1F · Investigation',t:"I build the case from what the floors below found: five exhibits, one timeline. I write the findings, but I don't close cases. That's a person's call.",ag:'Builds the case · verdict by Investigation Lead'},
+  {g:'case',sc:'f1',l:'Investigation Lead',who:'lead',h:'1F · The decision',t:"Case closed: fix the job, promote the studio record, retire the dead kiosk. Agents proposed every step. People approved every change.",k:'agents'},
+  {g:'case',sc:'f1vi',vi:'after',who:'triage',h:'Value Insights · after',t:"Same wall, after the case. Decisions waiting went from 4 to 0, spaces in fast search from 4 of 5 to 5 of 5, ghost records from 1 to 0. One promoted record, and every number moved."},
+  {g:'f2',sc:'f2',l:'Yiyun Zhu',who:'yiyun',h:"2F · The architect's studio",t:"I'm Yiyun Zhu. I designed this tower so you can walk through how data becomes a decision, instead of reading about it on a slide."},
+  {g:'f2',sc:'f2',l:'Design Notes',who:'yiyun',h:'2F · Design principles for AI',t:"Six principles shaped every agent you just met: agents propose and people decide, say how sure you are, hand over when unsure, keep the same boundaries as people, leave a trail, and stay beside the person.",act:['Read the six principles',()=>openArchitect(1)]},
+  {g:'f2',sc:'f2',l:'Agent Governance',who:'yiyun',h:'2F · Agent Governance',t:"This desk is the tower's control room: all nine agents, what each one may do, and which person signs off. Zero changes without a person.",act:['Open Agent Governance',()=>openGovernance()]},
+  {g:'f2',sc:'f2',l:'Art of the Possible',who:'yiyun',h:'2F · Concept designs',t:"The two stands hold my concept designs: Art of the Possible and Unified MELT. That's the tour. You can play the case yourself, or tell me what you thought of the experience.",act:['See the concept designs',()=>openArchitect(2)]}
+];
+const TOUR_G={ent:'Entrance',f1:'1F',b3:'B3',b2:'B2',b1:'B1',case:'1F',f2:'2F'};
+function grpHere(){const k=cur===SC.f1vi?'f1':(cur&&cur.floor)||'entrance';return {entrance:'ent',f1:S.verified?'case':'f1',b3:'b3',b2:'b2',b1:'b1',f2:'f2'}[k]||'ent'}
+function startTour(opt={}){
+  if(busy)return;closeDlg(true);if(modal.classList.contains('on'))closeModal();if(lift.classList.contains('on'))return;
+  const list=TOUR_STOPS.map((s,i)=>i).filter(i=>!opt.grp||TOUR_STOPS[i].g===opt.grp);
+  let i=0;if(opt.here){const g=grpHere(),j=list.findIndex(x=>TOUR_STOPS[x].g===g);if(j>=0)i=j}
+  TOUR={list,i,recap:!!opt.grp,back:S.scene,fx:.5,fy:.5};
+  document.body.classList.add('touring');$('#tour').hidden=false;setModeUI();tourShow();
+}
+async function tourShow(){
+  const T=TOUR;if(!T)return;const s=TOUR_STOPS[T.list[T.i]],want=s.vi||null;
+  $('#tour').classList.add('busy');
+  if(cur!==SC[s.sc]||viForce!==want){viForce=want;await go(s.sc,{after:()=>{}});if(cur!==SC[s.sc]){viForce=want;setScene(s.sc)}}
+  if(TOUR!==T)return;$('#tour').classList.remove('busy');
+  if(s.k)learn(s.k);
+  hsLayer.querySelectorAll('.hs').forEach(b=>b.classList.toggle('tfocus',!!s.l&&b.dataset.l===s.l));
+  const h=s.l&&cur.hs.find(x=>x[3]===s.l);
+  if(h){T.fx=rx?clamp((h[0]/100*W-innerWidth/2)/rx,0,1):.5;T.fy=ry?clamp((h[1]/100*H-innerHeight*.38)/ry,0,1):.5}
+  else{T.fx=cur.wide?(cur.wide.cx??.5):.5;T.fy=.5}
+  tx=T.fx;ty=T.fy;
+  $('#tPor').innerHTML=avatarHTML(s.who);
+  $('#tStep').textContent=(T.recap?'FLOOR RECAP':'GUIDED TOUR')+` · ${T.i+1} OF ${T.list.length}`;
+  $('#tWho').textContent=C[s.who].n+(s.ag?' · '+s.ag:'');
+  $('#tH').textContent=s.h;$('#tT').textContent=s.t;
+  const cd=$('#tCdf');cd.innerHTML='';
+  if(s.k){const b=document.createElement('button');b.className='tchip';b.innerHTML=`<span>CISCO DATA FABRIC</span>${LEARN[s.k].t}`;b.onclick=()=>{sfx.click();openModal(`<div class="kick">GUIDED TOUR · ${TOUR_G[s.g]}</div><div class="ttl">${LEARN[s.k].t}</div>${conceptBox(s.k)}`)};cd.appendChild(b)}
+  if(s.act){const b=document.createElement('button');b.className='tchip alt';b.textContent=s.act[0];b.onclick=()=>{sfx.click();s.act[1]()};cd.appendChild(b)}
+  $('#tPrev').disabled=T.i===0;
+  const last=T.i===T.list.length-1;
+  $('#tNext').textContent=last?(T.recap?'Back to the game':'Finish the tour'):'Next ›';
+  $('#tProg').innerHTML=T.list.map((x,j)=>`<i class="${j<T.i?'d':j===T.i?'on':''}" title="${TOUR_G[TOUR_STOPS[x].g]}"></i>`).join('');
+}
+function tourNext(){if(!TOUR||busy)return;sfx.click();if(TOUR.i<TOUR.list.length-1){TOUR.i++;tourShow()}else tourEnd()}
+function tourPrev(){if(!TOUR||busy||TOUR.i===0)return;sfx.click();TOUR.i--;tourShow()}
+function tourEnd(){
+  if(TOUR.recap){exitTour();return}
+  S.toured=true;save();sfx.ok();
+  openModal(`<div class="kick">GUIDED TOUR · COMPLETE</div><div class="ttl">That's the tower.</div><p class="sub">You followed one failed badge tap through every layer of Cisco Data Fabric.</p>${learnedList()}<div class="actions"><button class="btn go" id="teP">Play the case myself</button><button class="btn" id="teF">Give feedback on the experience</button></div>`,()=>{
+    $('#teP').onclick=()=>askPlay();$('#teF').onclick=()=>openGuestbook();
+  });
+}
+async function exitTour(opt={}){
+  if(!TOUR||busy)return;if(opt.fresh)resetProgress();const back=opt.fresh?'entrance':(SC[TOUR.back]&&TOUR.back!=='f1vi'?TOUR.back:(TOUR.back==='f1vi'?'f1':'entrance'));
+  TOUR=null;viForce=null;document.body.classList.remove('touring');$('#tour').hidden=true;setModeUI();
+  hsLayer.querySelectorAll('.tfocus').forEach(b=>b.classList.remove('tfocus'));
+  if(modal.classList.contains('on'))closeModal();
+  await go(back,{after:()=>{}});
+  renderHUD();renderHS();
+  if(back==='entrance'&&!S.talked.entrance)firstVisit('entrance');
+}
+function setModeUI(){$('#modeSw').querySelectorAll('button').forEach(b=>{const on=(b.dataset.m==='tour')===!!TOUR;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on))})}
+$('#modeSw').querySelectorAll('button').forEach(b=>b.onclick=()=>{sfx.click();if(b.dataset.m==='tour'&&!TOUR)startTour({here:true});else if(b.dataset.m==='game'&&TOUR)askPlay()});
+$('#tNext').onclick=tourNext;$('#tPrev').onclick=tourPrev;$('#tExit').onclick=()=>{sfx.click();askPlay()};
+addEventListener('keydown',e=>{if(!TOUR||modal.classList.contains('on')||document.activeElement.tagName==='INPUT')return;if(e.key==='ArrowRight')tourNext();if(e.key==='ArrowLeft')tourPrev()});
 
 /* ================= guestbook: shared visitor notes (db capability) ================= */
 let GDB=null,GUSER=null,NOTES=[],notesLive=false,noteTimer=null,noteIdx=0;
 const SAMPLE_NOTES=[
   {name:'Sample note',role:'Shown until real feedback arrives',rating:5,msg:'Feedback from visitors who finish the tour appears here, picked at random.'},
-  {name:'Sample note',role:'Shown until real feedback arrives',rating:5,msg:'Finish the case, meet Yiyun on 2F, and leave your feedback on this work.'}
+  {name:'Sample note',role:'Shown until real feedback arrives',rating:5,msg:'Finish the case or the guided tour, then leave your feedback on the experience.'}
 ];
 function validNote(n){return n&&typeof n.msg==='string'&&n.msg.trim().length>0&&n.msg.length<=400&&Number.isFinite(+n.rating)}
 (async()=>{
@@ -1983,14 +2224,14 @@ function renderGbList(){
     box.appendChild(d)});
 }
 async function openGuestbook(){
-  if(!S.verified)return info('2F · GUESTBOOK','Guestbook','Feedback opens once the case is closed. Come back after you meet Yiyun.');
+  if(!S.verified&&!S.toured)return info('GUESTBOOK','Feedback','Feedback opens once you close the case or finish the guided tour.');
   let uid=null,mine=null;
   try{if(GUSER)uid=await GUSER.id();GB_UID=uid;if(GDB&&uid){const d=await GDB.doc('notes/'+uid).get();if(d.exists)mine=d.data()}}catch(e){}
   const can=!!(GDB&&uid);
   const r0=mine?Math.round(+mine.rating)||5:5;
-  openModal(`<div class="kick">2F · YIYUN ZHU STUDIO · GUESTBOOK</div><div class="ttl">${mine?'Update your feedback':'Share your feedback'}</div><p class="sub">Please leave your thoughts on this work. Your feedback will appear on the tower's front page for future visitors.</p>
+  openModal(`<div class="kick">FUTURE DATA SEARCH TOWER · FEEDBACK</div><div class="ttl">${mine?'Update your feedback':'Share your feedback'}</div><p class="sub">How was the experience? Your feedback on the product will appear on the tower's front page for future visitors.</p>
     <div class="gbwrap"><div class="gb"><div class="gstars" id="gStars" role="radiogroup" aria-label="Rating">${[1,2,3,4,5].map(i=>`<button role="radio" data-v="${i}" aria-label="${i} star${i>1?'s':''}">★</button>`).join('')}</div>
-    <label>Your feedback<textarea id="gMsg" maxlength="280" rows="4" placeholder="What did you think of this work? What stayed with you?"></textarea></label><div class="gcount" id="gCount">0 / 280</div>
+    <label>Your feedback<textarea id="gMsg" maxlength="280" rows="4" placeholder="What worked, what was confusing, what should come next?"></textarea></label><div class="gcount" id="gCount">0 / 280</div>
     <div class="grow"><label>Name<input id="gName" maxlength="40"></label><label>Role (optional)<input id="gRole" maxlength="60" placeholder="e.g. Product designer"></label></div>
     <div class="msg" id="gMsgOut">${can?'':'Feedback can only be saved when you open this page signed in to Claude with access to post.'}</div>
     <div class="actions" style="margin-top:6px"><button class="btn go" id="gSend" ${can?'':'disabled'}>${mine?'Update feedback':'Post feedback'}</button><button class="btn" id="gNo">Not now</button></div></div><div class="gside"><div class="kick" id="gListH">What other visitors said</div><div class="glist" id="gList"></div></div></div>`,()=>{renderGbList();
@@ -2011,7 +2252,30 @@ async function openGuestbook(){
 }
 
 /* ================= HUD buttons ================= */
+$('#btnHome').onclick=()=>{sfx.click();goHome()};
+function goHome(){
+  if(TOUR){TOUR=null;viForce=null;document.body.classList.remove('touring');$('#tour').hidden=true;setModeUI();hsLayer.querySelectorAll('.tfocus').forEach(b=>b.classList.remove('tfocus'))}
+  closeDlg(true);if(modal.classList.contains('on'))closeModal();
+  try{if(lift.classList.contains('on')){lift.classList.remove('on','closed','ride');liftBusy=false}}catch(e){}
+  if(S.scene==='f1vi'){S.scene='f1';save()}
+  titleButtons();$('#nameIn').value=S.name;
+  const t=$('#title');t.hidden=false;t.style.opacity=0;requestAnimationFrame(()=>requestAnimationFrame(()=>{t.style.opacity=1;heroShow(heroI+1)}));
+}
 $('#btnRestart').onclick=()=>{sfx.click();confirmRestart()};
+function hasProgress(){return !!S.checked}
+function progressText(){
+  if(S.verified)return S.visited.f2?'Case closed · 2F unlocked':'Case closed · 2F waiting for you';
+  const n=['sort','twins','graph'].filter(k=>S.done[k]).length,sc=SC[S.scene]?SC[S.scene]:null,where=sc?(sc.floor?FL[sc.floor].code:'Entrance'):'Entrance';
+  return `${n} of 4 floors solved · last on ${where}`;
+}
+function resetProgress(){const nm=S.name,tr=S.toured;S=JSON.parse(JSON.stringify(DEF));S.name=nm;if(tr)S.toured=true;save()}
+function askPlay(){
+  if(TOUR&&TOUR.recap)return exitTour();
+  if(!hasProgress())return exitTour({fresh:true});
+  openModal(`<div class="kick">SWITCH TO PLAY</div><div class="ttl">Continue or start fresh?</div><p class="sub">You have a saved case: ${progressText()}.</p><div class="actions"><button class="btn go" id="apC">${S.verified?'Back to my finished case':'Continue my case'}</button><button class="btn" id="apN">Start a new game</button></div>`,()=>{
+    $('#apC').onclick=()=>exitTour();$('#apN').onclick=()=>exitTour({fresh:true});
+  });
+}
 function confirmRestart(){
   openModal(`<div class="kick">FUTURE DATA SEARCH TOWER</div><div class="ttl">Start the tour over?</div><p class="sub">Your badge, clue cards and progress will be cleared, and you'll start again at the visitor entrance.</p><div class="actions"><button class="btn go" id="rsYes">Start over</button><button class="btn" id="rsNo">Keep exploring</button></div>`,()=>{
     $('#rsNo').onclick=()=>closeModal();
@@ -2019,7 +2283,8 @@ function confirmRestart(){
   });
 }
 function restartTour(){
-  const nm=S.name;S=JSON.parse(JSON.stringify(DEF));S.name=nm;save();closeModal();
+  if(TOUR){TOUR=null;viForce=null;document.body.classList.remove('touring');$('#tour').hidden=true;setModeUI()}
+  resetProgress();closeModal();
   try{if(lift.classList.contains('on')){lift.classList.remove('on','closed','ride')}}catch(e){}
   setScene('entrance');renderHUD();toast('Fresh start. Welcome back to the tower.');
   setTimeout(()=>firstVisit('entrance'),700);
@@ -2056,23 +2321,32 @@ $('#hDots').querySelectorAll('button').forEach((b,j)=>b.onclick=()=>heroShow(j))
 heroShow(0);
 let loaded=0;
 IMGS.forEach(src=>{const i=new Image();i.onload=i.onerror=()=>{loaded++;$('#loadI').style.width=(loaded/IMGS.length*100)+'%';if(loaded===IMGS.length)ready()};i.src=src});
+function titleButtons(){
+  const b=$('#btnStart'),r=$('#btnReset'),has=hasProgress();
+  if(!has){b.textContent='Play the case';b.dataset.act='new';r.hidden=true;$('#tSave').hidden=true}
+  else if(S.verified){b.textContent='New game';b.dataset.act='new';r.textContent='Revisit my finished case';r.dataset.act='continue';r.hidden=false}
+  else{b.textContent='Continue my case';b.dataset.act='continue';r.textContent='New game';r.dataset.act='new';r.hidden=false}
+  if(has){$('#tSave').hidden=false;$('#tSave').textContent='Saved case: '+progressText()}
+}
 function ready(){
-  const b=$('#btnStart');b.disabled=false;
-  const resume=!!(load()&&(S.badge||S.checked));
-  b.textContent=resume?'Continue tour':'Start tour';
-  $('#btnReset').hidden=!resume;$('#nameIn').value=S.name;
+  $('#btnStart').disabled=false;$('#btnTour').disabled=false;
+  titleButtons();$('#nameIn').value=S.name;
   $('#loadbar').style.opacity=0;
 }
-$('#btnReset').onclick=()=>{S=JSON.parse(JSON.stringify(DEF));save();$('#btnReset').hidden=true;$('#btnStart').textContent='Start tour'};
-$('#btnStart').onclick=async()=>{
+const titleGo=act=>{if(act==='new')resetProgress();enterTower(false)};
+$('#btnReset').onclick=()=>titleGo($('#btnReset').dataset.act);
+async function enterTower(tour){
   ac();ambStart();sfx.ok();const nm=$('#nameIn').value.trim();if(nm)S.name=nm.slice(0,16);save();
   const t=$('#title');t.style.transition='opacity .6s';t.style.opacity=0;
-  const start=S.scene&&SC[S.scene]?S.scene:'entrance';
-  setScene(start);requestAnimationFrame(tick);
+  const start=S.checked&&SC[S.scene]?(S.scene==='f1vi'?'f1':S.scene):'entrance';
+  setScene(start);if(!enterTower.ticking){enterTower.ticking=1;requestAnimationFrame(tick)}
   await wait(600);t.hidden=true;
+  if(tour){startTour({});return}
   if(start==='entrance')setTimeout(()=>toast(matchMedia('(pointer: coarse)').matches?'Drag to look left and right. Tap a dot to interact.':'Move your mouse left or right to look around. Click a dot to interact.'),400);
   firstVisit(start);
-};
+}
+$('#btnStart').onclick=()=>titleGo($('#btnStart').dataset.act);
+$('#btnTour').onclick=()=>enterTower(true);
 $('#nameIn').addEventListener('keydown',e=>{if(e.key==='Enter'&&!$('#btnStart').disabled)$('#btnStart').click()});
 })();
 </script>

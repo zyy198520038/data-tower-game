@@ -7,7 +7,7 @@ if [ ! -d .git ]; then
   git init -b main
 fi
 git add -A
-git commit -m "Future Data Search Tower: initial import" || echo "Nothing new to commit"
+git commit -m "${1:-Update Future Data Search Tower}" || echo "Nothing new to commit"
 git remote remove origin 2>/dev/null || true
 git remote add origin "$REMOTE"
 git push -u origin main
